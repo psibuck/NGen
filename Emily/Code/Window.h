@@ -31,6 +31,8 @@ namespace EMILY
         
         void clear( void );
         void display( void );
+        void process_events( void );
+        void close( void );
         
     private:
         std::unique_ptr<sf::RenderWindow> m_application_window{ nullptr };

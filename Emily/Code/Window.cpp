@@ -35,22 +35,38 @@ namespace EMILY
     //--
     void Window::display( void )
     {
+        // Log
+        m_application_window->display();
+    }
+    
+    //--
+    // Process the events sent to us from the application window
+    //--
+    void Window::process_events()
+    {
         sf::Event event;
-        while (m_application_window->pollEvent(event))
+        while( m_application_window->pollEvent( event ))
         {
             // Close window: exit
-            if (event.type == sf::Event::Closed) {
+            if (event.type == sf::Event::Closed)
+            {
                 m_application_window->close();
             }
             
             // Escape pressed: exit
-            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape) {
+            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape)
+            {
                 m_application_window->close();
             }
         }
-        
-        // Log
-        m_application_window->display();
+    }
+    
+    //--
+    // Close is called when the window is being destroyed.
+    //--
+    void Window::close()
+    {
+        m_application_window->close();
     }
 }
 

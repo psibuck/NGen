@@ -12,6 +12,7 @@
 		21747D312211597F00118D6F /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D302211597F00118D6F /* Window.cpp */; };
 		21747D3422115DC400118D6F /* Window.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21747D2F2211584300118D6F /* Window.h */; };
 		21747D3A221236C500118D6F /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D39221236C500118D6F /* Application.cpp */; };
+		21747D3D2219C21200118D6F /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D3C2219C21200118D6F /* Event.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,8 @@
 		21747D302211597F00118D6F /* Window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Window.cpp; path = Code/Window.cpp; sourceTree = "<group>"; };
 		21747D38221236C500118D6F /* Application.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Application.h; path = Code/Application.h; sourceTree = "<group>"; };
 		21747D39221236C500118D6F /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Application.cpp; path = Code/Application.cpp; sourceTree = "<group>"; };
+		21747D3B2219C21200118D6F /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Event.h; path = Code/Event.h; sourceTree = "<group>"; };
+		21747D3C2219C21200118D6F /* Event.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Event.cpp; path = Code/Event.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,8 @@
 				21747D2F2211584300118D6F /* Window.h */,
 				21747D39221236C500118D6F /* Application.cpp */,
 				21747D38221236C500118D6F /* Application.h */,
+				21747D3B2219C21200118D6F /* Event.h */,
+				21747D3C2219C21200118D6F /* Event.cpp */,
 			);
 			name = Code;
 			sourceTree = "<group>";
@@ -195,6 +200,7 @@
 			files = (
 				21747D3A221236C500118D6F /* Application.cpp in Sources */,
 				21747D1F2210973100118D6F /* main.cpp in Sources */,
+				21747D3D2219C21200118D6F /* Event.cpp in Sources */,
 				21747D312211597F00118D6F /* Window.cpp in Sources */,
 				21747D1C2210973100118D6F /* ResourcePath.mm in Sources */,
 			);

@@ -16,6 +16,7 @@
 // Forward Declares
 namespace EMILY
 {
+    class Event;
     class Window;
 }
 
@@ -27,11 +28,13 @@ namespace EMILY
         void initialise( void );
         bool run( void );
         void update( void ) {};
-        void process_events( void ) {};
+        void process_events( void );
         void display( void );
-        void shutdown( void ) {};
+        void shutdown( void );
         
     private:
+        bool process_application_events( Event& event );
+        
         std::unique_ptr<Window> m_game_window{ nullptr };
         bool m_is_running{ false };
     };

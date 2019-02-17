@@ -8,6 +8,7 @@
 
 #include "Emily/Code/Application.h"
 
+#include "Emily/Code/Event.h"
 #include "SFML/Graphics.hpp"
 
 namespace EMILY
@@ -33,6 +34,28 @@ namespace EMILY
         m_game_window->display();
     }
     
+    //--
+    // The public event process call. Processes events from the different parts of the application
+    //--
+    void Application::process_events( void )
+    {
+        // First process the SFML events
+        m_game_window->process_events();
+        
+        Event event;
+        while ( process_application_events( event ) )
+        {
+        }
+    }
+    
+    
+    //--
+    // Process application events which are going to be stored in an event queue
+    //--
+    bool Application::process_application_events( Event& event )
+    {
+        return event.test();
+    }
     
     //--
     // The run method is the application controller. When it returns false we shutdown
@@ -40,6 +63,15 @@ namespace EMILY
     bool Application::run( void )
     {
         return m_is_running;
+    }
+    
+    
+    //--
+    // *Insert function purpose here*
+    //--
+    void Application::shutdown( void )
+    {
+        m_game_window->close();
     }
 }
 
