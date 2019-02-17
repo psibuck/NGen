@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Code">
+      <UniqueIdentifier>{f00919ed-899d-4327-9095-e22c9dafdd19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms">
+      <UniqueIdentifier>{434c2098-8b34-44fc-911e-ada256ce1efe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms\Windows">
+      <UniqueIdentifier>{939ff46c-3e06-43cd-87ad-e965dfcb85d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platforms\Mac">
+      <UniqueIdentifier>{a0469f25-9311-459d-9ad0-3371d03f2db1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Libraries">
+      <UniqueIdentifier>{8021eb78-144b-4cc8-bc3a-1432b8fe45b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Libraries\Windows">
+      <UniqueIdentifier>{33dadab6-a428-4c5f-a31d-d2f7045da7f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Libraries\Mac">
+      <UniqueIdentifier>{8a890cf9-3a27-4b38-ae68-084f1f752623}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="emily\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="emily\code\Window.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="emily\code\Application.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="emily\ResourcePath.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="emily\code\Application.h">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="emily\code\Window.h">
+      <Filter>Code</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
