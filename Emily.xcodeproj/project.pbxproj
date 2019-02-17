@@ -9,7 +9,23 @@
 /* Begin PBXBuildFile section */
 		21747D1C2210973100118D6F /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 21747D1B2210973100118D6F /* ResourcePath.mm */; };
 		21747D1F2210973100118D6F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D1E2210973100118D6F /* main.cpp */; };
+		21747D312211597F00118D6F /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D302211597F00118D6F /* Window.cpp */; };
+		21747D3422115DC400118D6F /* Window.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21747D2F2211584300118D6F /* Window.h */; };
+		21747D3A221236C500118D6F /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D39221236C500118D6F /* Application.cpp */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		21747D3322115DB100118D6F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				21747D3422115DC400118D6F /* Window.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		21747D162210973100118D6F /* Emily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emily.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -17,6 +33,10 @@
 		21747D1B2210973100118D6F /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
 		21747D1D2210973100118D6F /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
 		21747D1E2210973100118D6F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		21747D2F2211584300118D6F /* Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Window.h; path = Code/Window.h; sourceTree = "<group>"; };
+		21747D302211597F00118D6F /* Window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Window.cpp; path = Code/Window.cpp; sourceTree = "<group>"; };
+		21747D38221236C500118D6F /* Application.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Application.h; path = Code/Application.h; sourceTree = "<group>"; };
+		21747D39221236C500118D6F /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Application.cpp; path = Code/Application.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +97,10 @@
 		21747D2E2211572800118D6F /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				21747D302211597F00118D6F /* Window.cpp */,
+				21747D2F2211584300118D6F /* Window.h */,
+				21747D39221236C500118D6F /* Application.cpp */,
+				21747D38221236C500118D6F /* Application.h */,
 			);
 			name = Code;
 			sourceTree = "<group>";
@@ -92,6 +116,7 @@
 				21747D122210973100118D6F /* Frameworks */,
 				21747D132210973100118D6F /* Resources */,
 				21747D142210973100118D6F /* ShellScript */,
+				21747D3322115DB100118D6F /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -168,7 +193,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21747D3A221236C500118D6F /* Application.cpp in Sources */,
 				21747D1F2210973100118D6F /* main.cpp in Sources */,
+				21747D312211597F00118D6F /* Window.cpp in Sources */,
 				21747D1C2210973100118D6F /* ResourcePath.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,8 +300,11 @@
 		21747D2C2210973100118D6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CODE_SIGN_STYLE = Automatic;
+				"HEADER_SEARCH_PATHS[arch=*]" = $PROJECT_DIR;
 				INFOPLIST_FILE = "Emily/Emily-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -284,7 +314,9 @@
 		21747D2D2210973100118D6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Emily/Emily-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
