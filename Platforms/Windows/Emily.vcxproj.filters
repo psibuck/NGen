@@ -1,14 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
@@ -36,25 +28,31 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="emily\main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="emily\code\Window.cpp">
+    <ClInclude Include="emily\ResourcePath.hpp">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Application.h">
       <Filter>Code</Filter>
-    </ClCompile>
-    <ClCompile Include="emily\code\Application.cpp">
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Event.h">
       <Filter>Code</Filter>
-    </ClCompile>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Window.h">
+      <Filter>Code</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="emily\ResourcePath.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="emily\code\Application.h">
+    <ClCompile Include="..\..\Code\Application.cpp">
       <Filter>Code</Filter>
-    </ClInclude>
-    <ClInclude Include="emily\code\Window.h">
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Event.cpp">
       <Filter>Code</Filter>
-    </ClInclude>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\main.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Window.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
