@@ -6,7 +6,7 @@
 //  Copyright © 2019 Archie Buck. All rights reserved.
 //
 
-#include "Emily/Code/Window.h"
+#include "Code/Window.h"
 
 namespace EMILY
 {

@@ -7,12 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21747D1C2210973100118D6F /* ResourcePath.mm in Sources */ = {isa = PBXBuildFile; fileRef = 21747D1B2210973100118D6F /* ResourcePath.mm */; };
-		21747D1F2210973100118D6F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D1E2210973100118D6F /* main.cpp */; };
-		21747D312211597F00118D6F /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D302211597F00118D6F /* Window.cpp */; };
-		21747D3422115DC400118D6F /* Window.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 21747D2F2211584300118D6F /* Window.h */; };
-		21747D3A221236C500118D6F /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D39221236C500118D6F /* Application.cpp */; };
-		21747D3D2219C21200118D6F /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D3C2219C21200118D6F /* Event.cpp */; };
+		21747D452219D4E000118D6F /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D402219D4E000118D6F /* Window.cpp */; };
+		21747D462219D4E000118D6F /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D432219D4E000118D6F /* Event.cpp */; };
+		21747D472219D4E000118D6F /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D442219D4E000118D6F /* Application.cpp */; };
+		21747D492219D4FD00118D6F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D482219D4FD00118D6F /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -22,7 +20,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 7;
 			files = (
-				21747D3422115DC400118D6F /* Window.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30,16 +27,14 @@
 
 /* Begin PBXFileReference section */
 		21747D162210973100118D6F /* Emily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emily.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		21747D1A2210973100118D6F /* Emily-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Emily-Info.plist"; sourceTree = "<group>"; };
-		21747D1B2210973100118D6F /* ResourcePath.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ResourcePath.mm; sourceTree = "<group>"; };
-		21747D1D2210973100118D6F /* ResourcePath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ResourcePath.hpp; sourceTree = "<group>"; };
-		21747D1E2210973100118D6F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		21747D2F2211584300118D6F /* Window.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Window.h; path = Code/Window.h; sourceTree = "<group>"; };
-		21747D302211597F00118D6F /* Window.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Window.cpp; path = Code/Window.cpp; sourceTree = "<group>"; };
-		21747D38221236C500118D6F /* Application.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Application.h; path = Code/Application.h; sourceTree = "<group>"; };
-		21747D39221236C500118D6F /* Application.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Application.cpp; path = Code/Application.cpp; sourceTree = "<group>"; };
-		21747D3B2219C21200118D6F /* Event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Event.h; path = Code/Event.h; sourceTree = "<group>"; };
-		21747D3C2219C21200118D6F /* Event.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Event.cpp; path = Code/Event.cpp; sourceTree = "<group>"; };
+		21747D3F2219D4E000118D6F /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		21747D402219D4E000118D6F /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
+		21747D412219D4E000118D6F /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
+		21747D422219D4E000118D6F /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		21747D432219D4E000118D6F /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
+		21747D442219D4E000118D6F /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
+		21747D482219D4FD00118D6F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		21747D4A2219D72100118D6F /* Emily-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Emily-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +51,9 @@
 		21747D0C2210973100118D6F = {
 			isa = PBXGroup;
 			children = (
-				21747D182210973100118D6F /* Emily */,
+				21747D4A2219D72100118D6F /* Emily-Info.plist */,
 				21747D172210973100118D6F /* Products */,
+				21747D3E2219D4E000118D6F /* Code */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,45 +65,19 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21747D182210973100118D6F /* Emily */ = {
+		21747D3E2219D4E000118D6F /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				21747D2E2211572800118D6F /* Code */,
-				21747D1B2210973100118D6F /* ResourcePath.mm */,
-				21747D1D2210973100118D6F /* ResourcePath.hpp */,
-				21747D1E2210973100118D6F /* main.cpp */,
-				21747D202210973100118D6F /* Resources */,
-				21747D192210973100118D6F /* Supporting Files */,
-			);
-			path = Emily;
-			sourceTree = "<group>";
-		};
-		21747D192210973100118D6F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				21747D1A2210973100118D6F /* Emily-Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		21747D202210973100118D6F /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		21747D2E2211572800118D6F /* Code */ = {
-			isa = PBXGroup;
-			children = (
-				21747D302211597F00118D6F /* Window.cpp */,
-				21747D2F2211584300118D6F /* Window.h */,
-				21747D39221236C500118D6F /* Application.cpp */,
-				21747D38221236C500118D6F /* Application.h */,
-				21747D3B2219C21200118D6F /* Event.h */,
-				21747D3C2219C21200118D6F /* Event.cpp */,
+				21747D482219D4FD00118D6F /* main.cpp */,
+				21747D412219D4E000118D6F /* Application.h */,
+				21747D442219D4E000118D6F /* Application.cpp */,
+				21747D402219D4E000118D6F /* Window.cpp */,
+				21747D422219D4E000118D6F /* Window.h */,
+				21747D432219D4E000118D6F /* Event.cpp */,
+				21747D3F2219D4E000118D6F /* Event.h */,
 			);
 			name = Code;
+			path = ../../Code;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,11 +168,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21747D3A221236C500118D6F /* Application.cpp in Sources */,
-				21747D1F2210973100118D6F /* main.cpp in Sources */,
-				21747D3D2219C21200118D6F /* Event.cpp in Sources */,
-				21747D312211597F00118D6F /* Window.cpp in Sources */,
-				21747D1C2210973100118D6F /* ResourcePath.mm in Sources */,
+				21747D462219D4E000118D6F /* Event.cpp in Sources */,
+				21747D452219D4E000118D6F /* Window.cpp in Sources */,
+				21747D492219D4FD00118D6F /* main.cpp in Sources */,
+				21747D472219D4E000118D6F /* Application.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,8 +279,11 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CODE_SIGN_STYLE = Automatic;
-				"HEADER_SEARCH_PATHS[arch=*]" = $PROJECT_DIR;
-				INFOPLIST_FILE = "Emily/Emily-Info.plist";
+				"HEADER_SEARCH_PATHS[arch=*]" = (
+					"/Users/Archie/Documents/Programming/C++/Engines/Emily",
+					$PROJECT_DIR,
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/Emily-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -324,7 +296,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Emily/Emily-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Emily-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

@@ -1,7 +1,0 @@
-﻿  Application.cpp
-c:\programming\engines\emily\emily-engine\emily\code\application.cpp(9): fatal error C1083: Cannot open include file: 'Emily/Code/Application.h': No such file or directory
-  Window.cpp
-c:\programming\engines\emily\emily-engine\emily\code\window.cpp(9): fatal error C1083: Cannot open include file: 'Emily/Code/Window.h': No such file or directory
-  main.cpp
-c:\programming\engines\emily\emily-engine\emily\code\application.h(12): fatal error C1083: Cannot open include file: 'Emily/Code/Window.h': No such file or directory
-  Generating Code...
