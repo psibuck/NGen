@@ -6,9 +6,9 @@
 //  Copyright © 2019 Archie Buck. All rights reserved.
 //
 
-#include "Code/Application.h"
+#include "Code/Core/Application.h"
 
-#include "Code/Event.h"
+#include "Code/Core/Event.h"
 #include "SFML/Graphics.hpp"
 
 namespace EMILY

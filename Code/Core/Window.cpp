@@ -6,7 +6,7 @@
 //  Copyright © 2019 Archie Buck. All rights reserved.
 //
 
-#include "Code/Window.h"
+#include "Code/Core/Window.h"
 
 namespace EMILY
 {
@@ -50,13 +50,13 @@ namespace EMILY
             // Close window: exit
             if (event.type == sf::Event::Closed)
             {
-                m_application_window->close();
+                close();
             }
             
             // Escape pressed: exit
             if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape)
             {
-                m_application_window->close();
+                close();
             }
         }
     }

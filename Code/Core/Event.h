@@ -9,11 +9,11 @@
 #ifndef Event_hpp
 #define Event_hpp
 
-#include <stdio.h>
+#include "Code/Types/IdentifiableObject"
 
 namespace EMILY
 {
-    class Event
+    class Event : public IdentifiableObject
     {
     public:
         Event( void ) {};

@@ -11,6 +11,7 @@
 		21747D462219D4E000118D6F /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D432219D4E000118D6F /* Event.cpp */; };
 		21747D472219D4E000118D6F /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D442219D4E000118D6F /* Application.cpp */; };
 		21747D492219D4FD00118D6F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D482219D4FD00118D6F /* main.cpp */; };
+		21747D50221AC15700118D6F /* IdentifiableObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D4F221AC15700118D6F /* IdentifiableObject.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,8 @@
 		21747D442219D4E000118D6F /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
 		21747D482219D4FD00118D6F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		21747D4A2219D72100118D6F /* Emily-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Emily-Info.plist"; sourceTree = "<group>"; };
+		21747D4E221AC15700118D6F /* IdentifiableObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentifiableObject.h; sourceTree = "<group>"; };
+		21747D4F221AC15700118D6F /* IdentifiableObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IdentifiableObject.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +71,17 @@
 		21747D3E2219D4E000118D6F /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				21747D4C221ABF4200118D6F /* Core */,
+				21747D4D221ABF4500118D6F /* Types */,
 				21747D482219D4FD00118D6F /* main.cpp */,
+			);
+			name = Code;
+			path = ../../Code;
+			sourceTree = "<group>";
+		};
+		21747D4C221ABF4200118D6F /* Core */ = {
+			isa = PBXGroup;
+			children = (
 				21747D442219D4E000118D6F /* Application.cpp */,
 				21747D412219D4E000118D6F /* Application.h */,
 				21747D402219D4E000118D6F /* Window.cpp */,
@@ -76,8 +89,16 @@
 				21747D432219D4E000118D6F /* Event.cpp */,
 				21747D3F2219D4E000118D6F /* Event.h */,
 			);
-			name = Code;
-			path = ../../Code;
+			path = Core;
+			sourceTree = "<group>";
+		};
+		21747D4D221ABF4500118D6F /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				21747D4F221AC15700118D6F /* IdentifiableObject.cpp */,
+				21747D4E221AC15700118D6F /* IdentifiableObject.h */,
+			);
+			path = Types;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				21747D462219D4E000118D6F /* Event.cpp in Sources */,
+				21747D50221AC15700118D6F /* IdentifiableObject.cpp in Sources */,
 				21747D452219D4E000118D6F /* Window.cpp in Sources */,
 				21747D492219D4FD00118D6F /* main.cpp in Sources */,
 				21747D472219D4E000118D6F /* Application.cpp in Sources */,
