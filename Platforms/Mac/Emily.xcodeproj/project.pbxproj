@@ -69,8 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				21747D482219D4FD00118D6F /* main.cpp */,
-				21747D412219D4E000118D6F /* Application.h */,
 				21747D442219D4E000118D6F /* Application.cpp */,
+				21747D412219D4E000118D6F /* Application.h */,
 				21747D402219D4E000118D6F /* Window.cpp */,
 				21747D422219D4E000118D6F /* Window.h */,
 				21747D432219D4E000118D6F /* Event.cpp */,

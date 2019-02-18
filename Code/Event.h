@@ -18,7 +18,7 @@ namespace EMILY
     public:
         Event( void ) {};
         
-        bool test( void ) { return true; }
+        bool test( void ) { return false; }
         
     };
 }
