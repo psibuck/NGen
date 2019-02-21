@@ -9,14 +9,14 @@
 #ifndef Event_hpp
 #define Event_hpp
 
-#include "Code/Types/IdentifiableObject"
+#include "Code/Types/IdentifiableObject.h"
 
 namespace EMILY
 {
     class Event : public IdentifiableObject
     {
     public:
-        Event( void ) {};
+        Event( void );
         
         bool test( void ) { return false; }
         

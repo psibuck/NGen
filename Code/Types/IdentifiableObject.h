@@ -9,6 +9,7 @@
 #ifndef IdentifiableObject_h
 #define IdentifiableObject_h
 
+#include "Code/Types/Identifier.h"
 #include <stdio.h>
 
 namespace EMILY
@@ -16,9 +17,12 @@ namespace EMILY
     class IdentifiableObject
     {
     public:
-        IdentifiableObject( void );
+        IdentifiableObject( const Identifier id_in );
+        
+        Identifier get_id( void ) const;
         
     private:
+        Identifier id{ NULL_ID };
     };
 }
 

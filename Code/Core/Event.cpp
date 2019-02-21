@@ -7,3 +7,14 @@
 //
 
 #include "Code/Core/Event.h"
+
+namespace EMILY
+{
+    //--
+    // Constructor
+    //--
+    Event::Event( void )
+    : IdentifiableObject( 'EvnT' )
+    {
+    }
+}

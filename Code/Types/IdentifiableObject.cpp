@@ -14,7 +14,8 @@ namespace EMILY
     //--
     // Constructor
     //--
-    IdentifiableObject::IdentifiableObject( void )
+    IdentifiableObject::IdentifiableObject( const Identifier id_in )
+    : id( id_in )
     {
     }
 }

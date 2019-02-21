@@ -12,6 +12,8 @@
 		21747D472219D4E000118D6F /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D442219D4E000118D6F /* Application.cpp */; };
 		21747D492219D4FD00118D6F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D482219D4FD00118D6F /* main.cpp */; };
 		21747D50221AC15700118D6F /* IdentifiableObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D4F221AC15700118D6F /* IdentifiableObject.cpp */; };
+		21747D54221BE19800118D6F /* EventSubject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D53221BE19800118D6F /* EventSubject.cpp */; };
+		21747D57221BE1C700118D6F /* EventObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D56221BE1C700118D6F /* EventObserver.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +40,11 @@
 		21747D4A2219D72100118D6F /* Emily-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Emily-Info.plist"; sourceTree = "<group>"; };
 		21747D4E221AC15700118D6F /* IdentifiableObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentifiableObject.h; sourceTree = "<group>"; };
 		21747D4F221AC15700118D6F /* IdentifiableObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = IdentifiableObject.cpp; sourceTree = "<group>"; };
+		21747D51221B327000118D6F /* Identifier.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Identifier.h; sourceTree = "<group>"; };
+		21747D52221BE19800118D6F /* EventSubject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventSubject.h; sourceTree = "<group>"; };
+		21747D53221BE19800118D6F /* EventSubject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EventSubject.cpp; sourceTree = "<group>"; };
+		21747D55221BE1C700118D6F /* EventObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventObserver.h; sourceTree = "<group>"; };
+		21747D56221BE1C700118D6F /* EventObserver.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EventObserver.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +95,10 @@
 				21747D422219D4E000118D6F /* Window.h */,
 				21747D432219D4E000118D6F /* Event.cpp */,
 				21747D3F2219D4E000118D6F /* Event.h */,
+				21747D53221BE19800118D6F /* EventSubject.cpp */,
+				21747D52221BE19800118D6F /* EventSubject.h */,
+				21747D56221BE1C700118D6F /* EventObserver.cpp */,
+				21747D55221BE1C700118D6F /* EventObserver.h */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -97,6 +108,7 @@
 			children = (
 				21747D4F221AC15700118D6F /* IdentifiableObject.cpp */,
 				21747D4E221AC15700118D6F /* IdentifiableObject.h */,
+				21747D51221B327000118D6F /* Identifier.h */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -190,9 +202,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				21747D462219D4E000118D6F /* Event.cpp in Sources */,
+				21747D54221BE19800118D6F /* EventSubject.cpp in Sources */,
 				21747D50221AC15700118D6F /* IdentifiableObject.cpp in Sources */,
 				21747D452219D4E000118D6F /* Window.cpp in Sources */,
 				21747D492219D4FD00118D6F /* main.cpp in Sources */,
+				21747D57221BE1C700118D6F /* EventObserver.cpp in Sources */,
 				21747D472219D4E000118D6F /* Application.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +315,7 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CODE_SIGN_STYLE = Automatic;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = DEBUG;
 				"HEADER_SEARCH_PATHS[arch=*]" = (
 					"/Users/Archie/Documents/Programming/C++/Engines/Emily",
 					$PROJECT_DIR,
