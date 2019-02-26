@@ -16,6 +16,9 @@
 		21747D57221BE1C700118D6F /* EventObserver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D56221BE1C700118D6F /* EventObserver.cpp */; };
 		21747D5B221EB42500118D6F /* Vector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D5A221EB42500118D6F /* Vector3.cpp */; };
 		21747D5E221EB79A00118D6F /* MathTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D5D221EB79A00118D6F /* MathTests.cpp */; };
+		21747D702225D6C600118D6F /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D6C2225D6C600118D6F /* Shader.cpp */; };
+		21747D712225D6C600118D6F /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D6D2225D6C600118D6F /* Buffer.cpp */; };
+		21747D722225D6C600118D6F /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D6F2225D6C600118D6F /* Renderer.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,6 +54,12 @@
 		21747D5A221EB42500118D6F /* Vector3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Vector3.cpp; sourceTree = "<group>"; };
 		21747D5C221EB79A00118D6F /* MathTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathTests.h; sourceTree = "<group>"; };
 		21747D5D221EB79A00118D6F /* MathTests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MathTests.cpp; sourceTree = "<group>"; };
+		21747D6A2225D6C600118D6F /* Shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Shader.h; sourceTree = "<group>"; };
+		21747D6B2225D6C600118D6F /* Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		21747D6C2225D6C600118D6F /* Shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Shader.cpp; sourceTree = "<group>"; };
+		21747D6D2225D6C600118D6F /* Buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Buffer.cpp; sourceTree = "<group>"; };
+		21747D6E2225D6C600118D6F /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Buffer.h; sourceTree = "<group>"; };
+		21747D6F2225D6C600118D6F /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +105,7 @@
 		21747D4C221ABF4200118D6F /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				21747D692225D6C600118D6F /* Renderer */,
 				21747D442219D4E000118D6F /* Application.cpp */,
 				21747D412219D4E000118D6F /* Application.h */,
 				21747D402219D4E000118D6F /* Window.cpp */,
@@ -129,6 +139,19 @@
 				21747D5C221EB79A00118D6F /* MathTests.h */,
 			);
 			path = Math;
+			sourceTree = "<group>";
+		};
+		21747D692225D6C600118D6F /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				21747D6C2225D6C600118D6F /* Shader.cpp */,
+				21747D6A2225D6C600118D6F /* Shader.h */,
+				21747D6F2225D6C600118D6F /* Renderer.cpp */,
+				21747D6B2225D6C600118D6F /* Renderer.h */,
+				21747D6D2225D6C600118D6F /* Buffer.cpp */,
+				21747D6E2225D6C600118D6F /* Buffer.h */,
+			);
+			path = Renderer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,10 +242,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21747D722225D6C600118D6F /* Renderer.cpp in Sources */,
 				21747D462219D4E000118D6F /* Event.cpp in Sources */,
 				21747D54221BE19800118D6F /* EventSubject.cpp in Sources */,
 				21747D5B221EB42500118D6F /* Vector3.cpp in Sources */,
+				21747D712225D6C600118D6F /* Buffer.cpp in Sources */,
 				21747D50221AC15700118D6F /* IdentifiableObject.cpp in Sources */,
+				21747D702225D6C600118D6F /* Shader.cpp in Sources */,
 				21747D452219D4E000118D6F /* Window.cpp in Sources */,
 				21747D492219D4FD00118D6F /* main.cpp in Sources */,
 				21747D5E221EB79A00118D6F /* MathTests.cpp in Sources */,
@@ -338,6 +364,7 @@
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = DEBUG;
 				"HEADER_SEARCH_PATHS[arch=*]" = (
 					"/Users/Archie/Documents/Programming/C++/Engines/Emily",
+					"\"/Users/Archie/Documents/Programming/C++/Engines/Emily/External Libraries/Mac/SFML/Include\"",
 					$PROJECT_DIR,
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Emily-Info.plist";
