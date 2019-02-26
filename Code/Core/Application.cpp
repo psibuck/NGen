@@ -9,16 +9,20 @@
 #include "Code/Core/Application.h"
 
 #include "Code/Core/Event.h"
+#include "Code/Math/MathTests.h"
 #include "SFML/Graphics.hpp"
 
 namespace EMILY
 {
-    
     //--
     // The initialise method of the application. It sets up the application based on settings from an xml file
     //--
     void Application::initialise()
     {
+#ifdef DEBUG
+        MathTests::run();
+#endif // DEBUG
+        
         m_game_window = std::make_unique<Window>(800, 600);
         
         m_is_running = true;
