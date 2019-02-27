@@ -35,6 +35,15 @@ namespace EMILY
     }
     
     //--
+    // Multiplication operator overload - scalar
+    //--
+    Vector3 Vector3::operator*( const int scalar ) const
+    {
+        return Vector3( this->x * scalar, this->y * scalar, this->z * scalar );
+    }
+    
+    
+    //--
     // Equality operator overload
     //--
     bool Vector3::operator==( const Vector3& rhs ) const

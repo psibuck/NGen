@@ -26,6 +26,7 @@ namespace EMILY
     
         Vector3 operator+( const Vector3& rhs ) const;
         Vector3 operator-( const Vector3& rhs ) const;
+        Vector3 operator*( const int scalar ) const;
         bool operator==( const Vector3& rhs ) const;
         bool operator!=( const Vector3& rhs ) const;
         
