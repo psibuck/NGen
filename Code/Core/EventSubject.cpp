@@ -6,7 +6,9 @@
 //  Copyright © 2019 Archie Buck. All rights reserved.
 //
 
-#include "EventSubject.h"
+#include "Code/Core/EventSubject.h"
+
+#include "Code/Core/Assert.h"
 
 namespace EMILY
 {
@@ -18,10 +20,7 @@ namespace EMILY
 #ifdef DEBUG
         for( auto ite = observers.begin(); ite != observers.end(); ite++ )
         {
-            if( *ite == observer )
-            {
-                //! to-do: Assert Trying to add an observer to the list that has already been added 
-            }
+            ASSERT( "Trying to add an observer to the list that has already been added", *ite == observer );
         }
 #endif // DEBUG
         
@@ -45,8 +44,7 @@ namespace EMILY
 #ifdef DEBUG
                 if( removed )
                 {
-                    //! to-do: Assert that we have removed the observer and then found another instance of it
-                    continue;
+                    ASSERT_FAILED( "We have found another instance of the removed listener in our array. It should have never been added or we unsuccessfully removed the old one" );
                 }
 #endif // DEBUG
                 observers.erase( ite );
@@ -55,6 +53,6 @@ namespace EMILY
 
             }
         }
-        //! to-do: Assert if we don't remove
+        ASSERT_FAILED( "We came here with the purpose of removing an observer. We have failed to find/remove it." );
     }
 }

@@ -8,6 +8,7 @@
 
 #include "EventObserver.h"
 
+#include "Code/Core/Assert.h"
 #include "Code/Core/Event.h"
 #include "Code/Types/Identifier.h"
 
@@ -18,7 +19,7 @@ namespace EMILY
     //--
     bool EventObserver::handle_event( const Identifier event_id, Event& event )
     {
-        //! to-do: Assert if we reach the end of this as we have sent an event to an observer that hasn't handled the event. This is unexpected behaviour
+        ASSERT_FAILED( "We have registered and received an event we did not handle. Address!" );
         return false;
     }
     

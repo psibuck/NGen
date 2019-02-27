@@ -12,6 +12,7 @@
 #include "Code/Math/MathTests.h"
 
 #include "Code/Math/Vector3.h"
+#include "Code/Core/Assert.h"
 
 namespace EMILY
 {
@@ -40,8 +41,7 @@ namespace EMILY
            || addition.y != 2*y
            || addition.z != 2*z )
         {
-            // Assert test failed
-            // failed to add the vectors correctly
+            ASSERT_FAILED( "Vector addition test has failed" );
         }
         
         //! Subtraction
@@ -50,23 +50,14 @@ namespace EMILY
            || subtraction.y != y
            || subtraction.z != z )
         {
-            // Assert test failed
-            // failed to subtract the vectors successfully
-        }
-        
-        //! Inequality
-        if( subtraction != vector1 )
-        {
-            // Assert test failed
-            // Failed to equate the vectors
+            ASSERT_FAILED( "Vector subtraction test has failed" );
         }
         
         //! Equality
-        if( !(subtraction == vector1 ))
-        {
-            // Assert test failed
-            // Failed to successfully check equality
-        }
+        ASSERT( "Vector equality test has failed", subtraction == vector1 );
+        
+        //! Inequality
+        ASSERT( "Vector inequality test has failed", subtraction != addition );
         
         //! Scalar
         const Vector3 scaled_vector = vector1 * 2;
@@ -74,8 +65,7 @@ namespace EMILY
            || scaled_vector.y != 2*y
            || scaled_vector.z != 2*z )
         {
-            // Assert test failed
-            // Failed to successfully scale a vector
+            ASSERT_FAILED( "Vector scaling test has failed" );
         }
     }
 }
