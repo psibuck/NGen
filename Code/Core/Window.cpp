@@ -66,6 +66,7 @@ namespace EMILY
     //--
     void Window::close()
     {
+        //! to-do: Send event telling program to shutdown
         m_application_window->close();
     }
 }

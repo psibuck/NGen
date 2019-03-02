@@ -24,12 +24,13 @@ namespace EMILY
     public:
         virtual bool handle_event( const Identifier event_id, Event& event );
         
-        bool is_interested( Event* event );
+        bool is_interested( const Event event );
+        
+    protected:
+        void register_event( const Event event );
         
     private:
-        void register_event( Event* event );
-        
-        std::vector<Event*> registered_events;
+        std::vector<Event> registered_events;
     };
 }
 #endif /* EventObserver_hpp */

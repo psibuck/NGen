@@ -8,14 +8,16 @@
 
 #include "Buffer.h"
 
+#include <SFML/Graphics.hpp>
 
 namespace EMILY
 {
     //--
     // Constructor
     //--
-    Buffer::Buffer( const int* data, int count )
+    Buffer::Buffer( const void* data, const unsigned int size )
     {
+        
     }
     
     //--
@@ -30,6 +32,20 @@ namespace EMILY
     //--
     int Buffer::get_count() const
     {
-        return m_count;
     }
+    
+    //--
+    // Calls the GL bind method
+    //--
+    void Buffer::bind() const
+    {
+    }
+    
+    //--
+    // Calls the GL unbind method
+    //--
+    void Buffer::unbind() const
+    {
+    }
+    
 }

@@ -9,6 +9,7 @@
 #include "Code/Core/Application.h"
 
 #include "Code/Core/Event.h"
+#include "Code/Core/Renderer/Renderer.h"
 #include "Code/Math/MathTests.h"
 #include "SFML/Graphics.hpp"
 
@@ -24,7 +25,7 @@ namespace EMILY
 #endif // DEBUG
         
         m_game_window = std::make_unique<Window>(800, 600);
-        
+        Renderer::initialise();
         m_is_running = true;
     }
     
@@ -75,6 +76,7 @@ namespace EMILY
     //--
     void Application::shutdown( void )
     {
+        Renderer::get_instance().shutdown();
         m_game_window->close();
     }
 }

@@ -7,3 +7,21 @@
 //
 
 #include "Renderer.h"
+
+namespace EMILY
+{
+    void Renderer::draw( RenderData& data )
+    {
+        
+    }
+    
+    void Renderer::initialise( void )
+    {
+        
+    }
+    
+    void Renderer::shutdown( void )
+    {
+        
+    }
+}

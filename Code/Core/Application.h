@@ -25,7 +25,7 @@ namespace EMILY
     class Application
     {
     public:
-        void initialise( void );
+        virtual void initialise( void );
         bool run( void );
         void update( void ) {};
         void process_events( void );

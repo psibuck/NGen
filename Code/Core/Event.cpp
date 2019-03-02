@@ -17,4 +17,12 @@ namespace EMILY
     : IdentifiableObject( 'EvnT' )
     {
     }
+    
+    //--
+    // Equality operator overload
+    //--
+    bool Event::operator==( const Event rhs ) const
+    {
+        return ( this->get_id() == rhs.get_id() );
+    }
 }

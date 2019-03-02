@@ -6,8 +6,8 @@
 //  Copyright © 2019 Archie Buck. All rights reserved.
 //
 
-#ifndef Shader_hpp
-#define Shader_hpp
+#ifndef Shader_h
+#define Shader_h
 
 #include <stdio.h>
 
@@ -18,4 +18,4 @@ namespace EMILY
         
     };
 }
-#endif /* Shader_hpp */
+#endif /* Shader_h */

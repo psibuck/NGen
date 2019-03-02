@@ -26,7 +26,7 @@ namespace EMILY
     //--
     // Checks this event against the events this observer is interested in to decide whether or not to send the event to it
     //--
-    bool EventObserver::is_interested( Event* event )
+    bool EventObserver::is_interested( const Event event )
     {
         for( auto ite : registered_events )
         {
@@ -41,7 +41,7 @@ namespace EMILY
     //--
     // Registers an event that this class is interested in
     //--
-    void EventObserver::register_event( Event* event )
+    void EventObserver::register_event( const Event event )
     {
         registered_events.push_back( event );
     }

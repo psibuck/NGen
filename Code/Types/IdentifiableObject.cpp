@@ -18,4 +18,12 @@ namespace EMILY
     : id( id_in )
     {
     }
+    
+    //--
+    // Returns the id of the object
+    //--
+    Identifier IdentifiableObject::get_id( void ) const
+    {
+        return id;
+    }
 }

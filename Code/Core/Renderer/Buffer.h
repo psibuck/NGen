@@ -6,15 +6,15 @@
 //  Copyright © 2019 Archie Buck. All rights reserved.
 //
 
-#ifndef Buffer_hpp
-#define Buffer_hpp
+#ifndef Buffer_h
+#define Buffer_h
 
 namespace EMILY
 {
     class Buffer
     {
     public:
-        Buffer( const int* data, int count );
+        Buffer( const void* data, const unsigned int size );
         ~Buffer( void );
         
         void bind( void ) const;
@@ -23,8 +23,8 @@ namespace EMILY
         int get_count( void ) const;
         
     private:
-        int id;
+        unsigned int id;
         int m_count;
     };
 }
-#endif /* Buffer_hpp */
+#endif /* Buffer_h */

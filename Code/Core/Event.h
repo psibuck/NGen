@@ -20,6 +20,7 @@ namespace EMILY
         
         bool test( void ) { return false; }
         
+        bool operator==( const Event rhs ) const;
     };
 }
 

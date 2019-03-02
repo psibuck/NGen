@@ -28,9 +28,23 @@ namespace EMILY
     class Renderer
     {
     public:
-        void draw( const RenderData& data );
-    private:
+        static Renderer& get_instance()
+        {
+            static Renderer instance;
+            return instance;
+        }
+        Renderer(Renderer const&)        = delete;
+        void operator=(Renderer const&)  = delete;
         
+        void draw( RenderData& data );
+        
+        static void initialise( void );
+        void shutdown( void );
+        
+    private:
+        Renderer() {}
     };
 }
 #endif /* Renderer_hpp */
+
+

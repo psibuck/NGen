@@ -19,6 +19,11 @@
 		21747D702225D6C600118D6F /* Shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D6C2225D6C600118D6F /* Shader.cpp */; };
 		21747D712225D6C600118D6F /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D6D2225D6C600118D6F /* Buffer.cpp */; };
 		21747D722225D6C600118D6F /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D6F2225D6C600118D6F /* Renderer.cpp */; };
+		21747D802227E2A100118D6F /* Point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D7F2227E2A100118D6F /* Point.cpp */; };
+		21747D84222A9F8600118D6F /* Pong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D83222A9F8600118D6F /* Pong.cpp */; };
+		21747D87222AA18300118D6F /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D86222AA18300118D6F /* Ball.cpp */; };
+		21747D8A222AA19000118D6F /* Paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D89222AA19000118D6F /* Paddle.cpp */; };
+		21747D8D222AAE4200118D6F /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D8C222AAE4200118D6F /* Entity.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +66,16 @@
 		21747D6E2225D6C600118D6F /* Buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Buffer.h; sourceTree = "<group>"; };
 		21747D6F2225D6C600118D6F /* Renderer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Renderer.cpp; sourceTree = "<group>"; };
 		21747D76222673C300118D6F /* Assert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assert.h; sourceTree = "<group>"; };
+		21747D7C2227E1F400118D6F /* Point.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Point.h; sourceTree = "<group>"; };
+		21747D7F2227E2A100118D6F /* Point.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Point.cpp; sourceTree = "<group>"; };
+		21747D82222A9F8600118D6F /* Pong.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pong.h; sourceTree = "<group>"; };
+		21747D83222A9F8600118D6F /* Pong.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Pong.cpp; sourceTree = "<group>"; };
+		21747D85222AA18300118D6F /* Ball.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		21747D86222AA18300118D6F /* Ball.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Ball.cpp; sourceTree = "<group>"; };
+		21747D88222AA19000118D6F /* Paddle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Paddle.h; sourceTree = "<group>"; };
+		21747D89222AA19000118D6F /* Paddle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Paddle.cpp; sourceTree = "<group>"; };
+		21747D8B222AAE4200118D6F /* Entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		21747D8C222AAE4200118D6F /* Entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +109,7 @@
 		21747D3E2219D4E000118D6F /* Code */ = {
 			isa = PBXGroup;
 			children = (
+				21747D81222A9F7800118D6F /* Pong */,
 				21747D58221EB40E00118D6F /* Math */,
 				21747D4C221ABF4200118D6F /* Core */,
 				21747D4D221ABF4500118D6F /* Types */,
@@ -128,6 +144,8 @@
 				21747D4F221AC15700118D6F /* IdentifiableObject.cpp */,
 				21747D4E221AC15700118D6F /* IdentifiableObject.h */,
 				21747D51221B327000118D6F /* Identifier.h */,
+				21747D8C222AAE4200118D6F /* Entity.cpp */,
+				21747D8B222AAE4200118D6F /* Entity.h */,
 			);
 			path = Types;
 			sourceTree = "<group>";
@@ -139,6 +157,8 @@
 				21747D59221EB42500118D6F /* Vector3.h */,
 				21747D5D221EB79A00118D6F /* MathTests.cpp */,
 				21747D5C221EB79A00118D6F /* MathTests.h */,
+				21747D7F2227E2A100118D6F /* Point.cpp */,
+				21747D7C2227E1F400118D6F /* Point.h */,
 			);
 			path = Math;
 			sourceTree = "<group>";
@@ -154,6 +174,19 @@
 				21747D6E2225D6C600118D6F /* Buffer.h */,
 			);
 			path = Renderer;
+			sourceTree = "<group>";
+		};
+		21747D81222A9F7800118D6F /* Pong */ = {
+			isa = PBXGroup;
+			children = (
+				21747D83222A9F8600118D6F /* Pong.cpp */,
+				21747D82222A9F8600118D6F /* Pong.h */,
+				21747D86222AA18300118D6F /* Ball.cpp */,
+				21747D85222AA18300118D6F /* Ball.h */,
+				21747D89222AA19000118D6F /* Paddle.cpp */,
+				21747D88222AA19000118D6F /* Paddle.h */,
+			);
+			path = Pong;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,12 +282,17 @@
 				21747D54221BE19800118D6F /* EventSubject.cpp in Sources */,
 				21747D5B221EB42500118D6F /* Vector3.cpp in Sources */,
 				21747D712225D6C600118D6F /* Buffer.cpp in Sources */,
+				21747D8A222AA19000118D6F /* Paddle.cpp in Sources */,
+				21747D84222A9F8600118D6F /* Pong.cpp in Sources */,
 				21747D50221AC15700118D6F /* IdentifiableObject.cpp in Sources */,
 				21747D702225D6C600118D6F /* Shader.cpp in Sources */,
 				21747D452219D4E000118D6F /* Window.cpp in Sources */,
+				21747D87222AA18300118D6F /* Ball.cpp in Sources */,
 				21747D492219D4FD00118D6F /* main.cpp in Sources */,
 				21747D5E221EB79A00118D6F /* MathTests.cpp in Sources */,
 				21747D57221BE1C700118D6F /* EventObserver.cpp in Sources */,
+				21747D8D222AAE4200118D6F /* Entity.cpp in Sources */,
+				21747D802227E2A100118D6F /* Point.cpp in Sources */,
 				21747D472219D4E000118D6F /* Application.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -360,7 +398,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_X86_VECTOR_INSTRUCTIONS = avx2;
 				CODE_SIGN_STYLE = Automatic;
@@ -380,7 +418,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_X86_VECTOR_INSTRUCTIONS = avx2;
 				CODE_SIGN_STYLE = Automatic;
