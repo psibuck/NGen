@@ -16,6 +16,13 @@
 namespace EMILY
 {
     //--
+    // Constructor
+    //--
+    Application::Application( const std::string& _name, const int _height, const int _width ) : m_app_name( _name ), m_height( _height ), m_width( _width )
+    {
+    }
+    
+    //--
     // The initialise method of the application. It sets up the application based on settings from an xml file
     //--
     void Application::initialise()
@@ -24,9 +31,17 @@ namespace EMILY
         MathTests::run();
 #endif // DEBUG
         
-        m_game_window = std::make_unique<Window>(800, 600);
+        m_game_window = std::make_unique<Window>( m_app_name, m_height, m_width );
         Renderer::initialise();
         m_is_running = true;
+    }
+    
+    //--
+    // Clears the display at the end of every frame
+    //--
+    void Application::clear( void )
+    {
+        m_game_window->clear();
     }
     
     //--
@@ -34,8 +49,6 @@ namespace EMILY
     //--
     void Application::display( void )
     {
-        m_game_window->clear();
-        
         m_game_window->display();
     }
     

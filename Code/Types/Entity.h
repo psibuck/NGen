@@ -9,6 +9,7 @@
 #ifndef Entity_hpp
 #define Entity_hpp
 
+#include "Code/Math/Point.h"
 #include "Code/Types/IdentifiableObject.h"
 #include "SFML/Graphics.hpp"
 
@@ -18,6 +19,9 @@ namespace EMILY
     {
     public:
         Entity( const Identifier id );
+        
+    private:
+
     };
 }
 #endif /* Entity_hpp */

@@ -27,12 +27,14 @@ namespace EMILY
     class Window
     {
     public:
-        Window( const unsigned int height, const unsigned int width );
+        Window( const std::string& app_name, const unsigned int height, const unsigned int width );
         
         void clear( void );
         void display( void );
         void process_events( void );
         void close( void );
+        
+        sf::RenderWindow* get_window( void ) { return m_application_window.get(); }
         
     private:
         std::unique_ptr<sf::RenderWindow> m_application_window{ nullptr };

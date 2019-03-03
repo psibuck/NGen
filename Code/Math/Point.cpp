@@ -32,4 +32,20 @@ namespace EMILY
     {
         return y;
     }
+    
+    //--
+    // Provides a public interface to set x
+    //--
+    void Point::set_x( const float _x )
+    {
+        x = _x;
+    }
+    
+    //--
+    // Provides a public interface to set y
+    //--
+    void Point::set_y( const float _y )
+    {
+        y = _y;
+    }
 }

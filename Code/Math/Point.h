@@ -18,6 +18,8 @@ namespace EMILY
         
         float get_x( void ) const;
         float get_y( void ) const;
+        void set_x( const float _x );
+        void set_y( const float _y );
         
     private:
         float x{ 0.0 };

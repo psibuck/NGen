@@ -1,21 +1,39 @@
 
 #include "Code/Core/Application.h"
+#include "Code/Pong/Pong.h"
 
-int main(int, char const**)
+//int main(int, char const**)
+//{
+//    EMILY::Application* application = new EMILY::Application();
+//
+//    application->initialise();
+//
+//    while( application->run() )
+//    {
+//        application->process_events();
+//        application->update();
+//        application->display();
+//    }
+//
+//    application->shutdown();
+//
+//    return EXIT_SUCCESS;
+//}
+
+int main( int, char const** )
 {
-    EMILY::Application* application = new EMILY::Application();
+    Pong* game = new Pong();
+    game->initialise();
     
-    application->initialise();
-    
-    while( application->run() )
+    while( game->run() )
     {
-        application->process_events();
-        application->update();
-        application->display();
+        game->process_events();
+        game->update();
+        game->clear();
+        game->display();
     }
     
-    application->shutdown();
+    game->shutdown();
     
     return EXIT_SUCCESS;
 }
-

@@ -13,11 +13,10 @@ namespace EMILY
     //--
     // Class Constructor
     //--
-    Window::Window( const unsigned int height, const unsigned int width )
+    Window::Window( const std::string& app_name, const unsigned int height, const unsigned int width )
     {
         // Create the main window
-        m_application_window = std::make_unique<sf::RenderWindow>( sf::VideoMode(800,600), "SFML window" );
-        m_application_window->setSize( {height, width} );
+        m_application_window = std::make_unique<sf::RenderWindow>( sf::VideoMode(height, width), app_name );
     }
     
     //--
