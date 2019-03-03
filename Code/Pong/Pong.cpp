@@ -7,6 +7,7 @@
 //
 
 #include "Code/Pong/Pong.h"
+
 #include "Code/Core/Renderer/Renderer.h"
 
 //--
@@ -23,7 +24,8 @@ void Pong::initialise( void )
 {
     current_state = GAME_STATE::IN_GAME;
     m_ball = std::make_unique<Ball>();
-    
+    m_paddle_one = std::make_unique<Paddle>( 1400.0f, 50.0f );
+    m_paddle_two = std::make_unique<Paddle>( 40.0f, 850.0f );
     super::initialise();
 }
 
@@ -33,7 +35,8 @@ void Pong::initialise( void )
 void Pong::display( void )
 {
     m_ball->draw( get_game_window() );
-    
+    m_paddle_one->draw( get_game_window() );
+    m_paddle_two->draw( get_game_window() );
     
     super::display();
 }
@@ -66,6 +69,7 @@ void Pong::check_for_collision( void )
     if( collides( x_position + ball_radius, 0, window_bounds.x ) )
     {
         m_ball->bounce( AXIS::X );
+        //! SCORE
     }
     
     if( collides( y_position + ball_radius, 0, window_bounds.y ))

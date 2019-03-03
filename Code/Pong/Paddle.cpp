@@ -8,12 +8,22 @@
 
 #include "Paddle.h"
 
-#include "Code/Core/Event.h"
+#include <SFML/Graphics.hpp>
 
 //--
 // Constructor
 //--
-Paddle::Paddle( void ) : EMILY::Entity( 'padl' )
+Paddle::Paddle( const float x_in, const float y_in ) : EMILY::Entity( 'padl' ), x( x_in ), y( y_in )
 {
-    register_event( EMILY::Event() );
+}
+
+//--
+// Draws the paddle to the screen
+//--
+void Paddle::draw(sf::RenderWindow *window) const
+{
+    sf::RectangleShape paddle = sf::RectangleShape( sf::Vector2f( width, height ));
+    paddle.setPosition( x, y );
+    paddle.setFillColor( sf::Color( 255, 255, 255 ));
+    window->draw( paddle );
 }

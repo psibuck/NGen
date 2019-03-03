@@ -40,8 +40,6 @@ namespace EMILY
         sf::RenderWindow* get_game_window( void ) { return m_game_window->get_window(); }
         
     private:
-        bool process_application_events( Event& event );
-        
         std::unique_ptr<Window> m_game_window{ nullptr };
         bool m_is_running{ false };
         

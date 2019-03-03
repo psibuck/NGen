@@ -59,20 +59,6 @@ namespace EMILY
     {
         // First process the SFML events
         m_game_window->process_events();
-        
-        Event event;
-        while ( process_application_events( event ) )
-        {
-        }
-    }
-    
-    
-    //--
-    // Process application events which are going to be stored in an event queue
-    //--
-    bool Application::process_application_events( Event& event )
-    {
-        return event.test();
     }
     
     //--
