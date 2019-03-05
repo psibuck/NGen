@@ -12,6 +12,7 @@
 #include "Code/Core/Application.h"
 #include "Code/Pong/Ball.h"
 #include "Code/Pong/Paddle.h"
+#include "Code/Pong/Scoreboard.h"
 #include <SFML/Graphics.hpp>
 
 enum class GAME_STATE : short int
@@ -48,6 +49,7 @@ private:
     std::unique_ptr<Ball> m_ball{ nullptr };
     std::unique_ptr<Paddle> m_paddle_one{ nullptr };
     std::unique_ptr<Paddle> m_paddle_two{ nullptr };
+    std::unique_ptr<Scoreboard> m_scoreboard{ nullptr };
     
 };
 #include <stdio.h>

@@ -26,6 +26,7 @@ void Pong::initialise( void )
     m_ball = std::make_unique<Ball>();
     m_paddle_one = std::make_unique<Paddle>( 40.0f, 850.0f );
     m_paddle_two = std::make_unique<Paddle>( 1400.0f, 50.0f );
+    m_scoreboard = std::make_unique<Scoreboard>( EMILY::Point( 470, 200 ), EMILY::Point( 450, 250 ), 10.0f );
     super::initialise();
 }
 
@@ -34,10 +35,10 @@ void Pong::initialise( void )
 //--
 void Pong::display( void )
 {
+    m_scoreboard->draw( get_game_window() );
     m_ball->draw( get_game_window() );
     m_paddle_one->draw( get_game_window() );
     m_paddle_two->draw( get_game_window() );
-    
     super::display();
 }
 
@@ -47,9 +48,15 @@ void Pong::display( void )
 void Pong::update( void )
 {
     check_for_collision();
+    if( m_scoreboard->has_ticked() )
+    {
+        m_ball->speed_up();
+        //m_scoreboard->reset_timer();
+    }
     m_ball->update();
     m_paddle_one->update();
     m_paddle_two->update();
+    m_scoreboard->update();
 }
 
 //--

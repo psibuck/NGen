@@ -23,6 +23,12 @@
 		21747D87222AA18300118D6F /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D86222AA18300118D6F /* Ball.cpp */; };
 		21747D8A222AA19000118D6F /* Paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D89222AA19000118D6F /* Paddle.cpp */; };
 		21747D8D222AAE4200118D6F /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D8C222AAE4200118D6F /* Entity.cpp */; };
+		21747D90222E56EF00118D6F /* Scoreboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D8F222E56EF00118D6F /* Scoreboard.cpp */; };
+		21747D99222EE88C00118D6F /* Caviar_Dreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747D94222EE88C00118D6F /* Caviar_Dreams_Bold.ttf */; };
+		21747D9A222EE88C00118D6F /* CaviarDreams_BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747D95222EE88C00118D6F /* CaviarDreams_BoldItalic.ttf */; };
+		21747D9B222EE88C00118D6F /* CaviarDreams.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747D96222EE88C00118D6F /* CaviarDreams.ttf */; };
+		21747D9C222EE88C00118D6F /* CaviarDreams_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747D97222EE88C00118D6F /* CaviarDreams_Italic.ttf */; };
+		21747D9D222EE88C00118D6F /* Nymphont License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 21747D98222EE88C00118D6F /* Nymphont License.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -73,6 +79,14 @@
 		21747D89222AA19000118D6F /* Paddle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Paddle.cpp; sourceTree = "<group>"; };
 		21747D8B222AAE4200118D6F /* Entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
 		21747D8C222AAE4200118D6F /* Entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
+		21747D8E222E56EF00118D6F /* Scoreboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scoreboard.h; sourceTree = "<group>"; };
+		21747D8F222E56EF00118D6F /* Scoreboard.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Scoreboard.cpp; sourceTree = "<group>"; };
+		21747D94222EE88C00118D6F /* Caviar_Dreams_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Caviar_Dreams_Bold.ttf; sourceTree = "<group>"; };
+		21747D95222EE88C00118D6F /* CaviarDreams_BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_BoldItalic.ttf; sourceTree = "<group>"; };
+		21747D96222EE88C00118D6F /* CaviarDreams.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams.ttf; sourceTree = "<group>"; };
+		21747D97222EE88C00118D6F /* CaviarDreams_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Italic.ttf; sourceTree = "<group>"; };
+		21747D98222EE88C00118D6F /* Nymphont License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Nymphont License.txt"; sourceTree = "<group>"; };
+		21747D9E222EEA1800118D6F /* CaviarDreams.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CaviarDreams.ttf; path = ../../CaviarDreams.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +103,11 @@
 		21747D0C2210973100118D6F = {
 			isa = PBXGroup;
 			children = (
+				21747D9E222EEA1800118D6F /* CaviarDreams.ttf */,
 				21747D4A2219D72100118D6F /* Emily-Info.plist */,
 				21747D172210973100118D6F /* Products */,
 				21747D3E2219D4E000118D6F /* Code */,
+				21747D91222E63F900118D6F /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,8 +196,38 @@
 				21747D85222AA18300118D6F /* Ball.h */,
 				21747D89222AA19000118D6F /* Paddle.cpp */,
 				21747D88222AA19000118D6F /* Paddle.h */,
+				21747D8F222E56EF00118D6F /* Scoreboard.cpp */,
+				21747D8E222E56EF00118D6F /* Scoreboard.h */,
 			);
 			path = Pong;
+			sourceTree = "<group>";
+		};
+		21747D91222E63F900118D6F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				21747D92222E641100118D6F /* Font */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		21747D92222E641100118D6F /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				21747D93222EE88C00118D6F /* Caviar-Dreams */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		21747D93222EE88C00118D6F /* Caviar-Dreams */ = {
+			isa = PBXGroup;
+			children = (
+				21747D94222EE88C00118D6F /* Caviar_Dreams_Bold.ttf */,
+				21747D95222EE88C00118D6F /* CaviarDreams_BoldItalic.ttf */,
+				21747D96222EE88C00118D6F /* CaviarDreams.ttf */,
+				21747D97222EE88C00118D6F /* CaviarDreams_Italic.ttf */,
+				21747D98222EE88C00118D6F /* Nymphont License.txt */,
+			);
+			path = "Caviar-Dreams";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +288,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21747D99222EE88C00118D6F /* Caviar_Dreams_Bold.ttf in Resources */,
+				21747D9A222EE88C00118D6F /* CaviarDreams_BoldItalic.ttf in Resources */,
+				21747D9D222EE88C00118D6F /* Nymphont License.txt in Resources */,
+				21747D9C222EE88C00118D6F /* CaviarDreams_Italic.ttf in Resources */,
+				21747D9B222EE88C00118D6F /* CaviarDreams.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +336,7 @@
 				21747D492219D4FD00118D6F /* main.cpp in Sources */,
 				21747D5E221EB79A00118D6F /* MathTests.cpp in Sources */,
 				21747D57221BE1C700118D6F /* EventObserver.cpp in Sources */,
+				21747D90222E56EF00118D6F /* Scoreboard.cpp in Sources */,
 				21747D8D222AAE4200118D6F /* Entity.cpp in Sources */,
 				21747D802227E2A100118D6F /* Point.cpp in Sources */,
 				21747D472219D4E000118D6F /* Application.cpp in Sources */,

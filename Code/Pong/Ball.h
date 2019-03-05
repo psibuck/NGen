@@ -31,7 +31,7 @@ public:
     void draw( sf::RenderWindow* window ) const;
     void update( void );
     void bounce( const AXIS axis );
-    
+    void speed_up( void );
     float get_radius( void ) const;
     EMILY::Point get_position( void );
     

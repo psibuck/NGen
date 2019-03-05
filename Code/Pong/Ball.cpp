@@ -70,3 +70,18 @@ EMILY::Point Ball::get_position( void )
     const EMILY::Point pos_vec = EMILY::Point( ball->getPosition().x, ball->getPosition().y );
     return pos_vec;
 }
+
+//--
+// Speeds up the ball
+//--
+void Ball::speed_up( void )
+{
+    if( m_x_speed > 0 )
+    {
+        m_x_speed += 0.1f;
+    }
+    else
+    {
+        m_x_speed -= 0.1f;
+    }
+}
