@@ -10,10 +10,13 @@
 
 #include "Code/Core/Renderer/Renderer.h"
 
+constexpr float X_RESOLUTION = 1440;
+constexpr float Y_RESOLUTION = 900;
+
 //--
 // Constructor
 //--
-Pong::Pong( void ) : EMILY::Application( "Pong", 1440, 900 )
+Pong::Pong( void ) : EMILY::Application( "Pong", X_RESOLUTION, Y_RESOLUTION )
 {
 }
 
@@ -24,8 +27,8 @@ void Pong::initialise( void )
 {
     current_state = GAME_STATE::IN_GAME;
     m_ball = std::make_unique<Ball>();
-    m_paddle_one = std::make_unique<Paddle>( 40.0f, 850.0f );
-    m_paddle_two = std::make_unique<Paddle>( 1400.0f, 50.0f );
+    m_paddle_one = std::make_unique<Paddle>( EMILY::Point( 40.0f, 850.0f ), EMILY::Point( 0.0f, Y_RESOLUTION ));
+    m_paddle_two = std::make_unique<Paddle>( EMILY::Point( 1400.0f, 850.0f ), EMILY::Point( 0.0f, Y_RESOLUTION ));
     m_scoreboard = std::make_unique<Scoreboard>( EMILY::Point( 470, 200 ), EMILY::Point( 450, 250 ), 10.0f );
     super::initialise();
 }

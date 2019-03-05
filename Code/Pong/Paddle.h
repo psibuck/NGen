@@ -21,7 +21,7 @@ enum class DIRECTION : short int
 class Paddle : public EMILY::Entity
 {
 public:
-    Paddle( const float x_in, const float y_in );
+   explicit Paddle( const EMILY::Point position_in, const EMILY::Point y_bounds_in );
     
     void draw( sf::RenderWindow* window ) const;
     void update( void );
@@ -34,8 +34,7 @@ private:
     void move_down( void );
     
     std::unique_ptr<sf::RectangleShape> paddle{ nullptr };
-    float x{ 0.0f };
-    float y{ 0.0f };
+	EMILY::Point y_bounds{ 0.0f, 0.0f };
     const float height{ 150.0f };
     const float width{ 15.0f };
     const float speed{ 0.5f };

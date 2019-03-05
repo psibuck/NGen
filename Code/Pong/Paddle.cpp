@@ -13,10 +13,13 @@
 //--
 // Constructor
 //--
-Paddle::Paddle( const float x_in, const float y_in ) : EMILY::Entity( 'padl' ), x( x_in ), y( y_in )
+Paddle::Paddle( const EMILY::Point position_in, const EMILY::Point y_bounds_in )
+	: EMILY::Entity( 'padl' )
 {
+	y_bounds = EMILY::Point( y_bounds_in.get_x(),  y_bounds_in.get_y() - height );
+
     paddle = std::make_unique<sf::RectangleShape>( sf::Vector2f( width, height ));
-    paddle->setPosition( x, y );
+    paddle->setPosition( position_in.get_x(), y_bounds_in.get_y() / 2 );
     paddle->setFillColor( sf::Color( 255, 255, 255 ));
 }
 
@@ -100,7 +103,7 @@ void Paddle::handle_key_release(const sf::Keyboard::Key key)
 //--
 void Paddle::move_up( void )
 {
-    paddle->setPosition( paddle->getPosition().x, paddle->getPosition().y - speed );
+    paddle->setPosition( paddle->getPosition().x, std::max( paddle->getPosition().y - speed, y_bounds.get_x() ));
 }
 
 //--
@@ -108,7 +111,7 @@ void Paddle::move_up( void )
 //--
 void Paddle::move_down( void )
 {
-    paddle->setPosition( paddle->getPosition().x, paddle->getPosition().y + speed );
+    paddle->setPosition( paddle->getPosition().x, std::min( paddle->getPosition().y + speed, y_bounds.get_y() ) );
 }
 
 //--
