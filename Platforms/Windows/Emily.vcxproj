@@ -105,16 +105,38 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Code\Application.h" />
-    <ClInclude Include="..\..\Code\Event.h" />
-    <ClInclude Include="..\..\Code\Window.h" />
+    <ClInclude Include="..\..\Code\Core\Application.h" />
+    <ClInclude Include="..\..\Code\Core\Assert.h" />
+    <ClInclude Include="..\..\Code\Core\Event.h" />
+    <ClInclude Include="..\..\Code\Core\EventObserver.h" />
+    <ClInclude Include="..\..\Code\Core\EventSubject.h" />
+    <ClInclude Include="..\..\Code\Math\MathTests.h" />
+    <ClInclude Include="..\..\Code\Math\Point.h" />
+    <ClInclude Include="..\..\Code\Math\Vector3.h" />
+    <ClInclude Include="..\..\Code\Pong\Ball.h" />
+    <ClInclude Include="..\..\Code\Pong\Paddle.h" />
+    <ClInclude Include="..\..\Code\Pong\Pong.h" />
+    <ClInclude Include="..\..\Code\Pong\Scoreboard.h" />
+    <ClInclude Include="..\..\Code\Types\Entity.h" />
+    <ClInclude Include="..\..\Code\Types\IdentifiableObject.h" />
+    <ClInclude Include="..\..\Code\Types\Identifier.h" />
     <ClInclude Include="emily\ResourcePath.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Code\Application.cpp" />
-    <ClCompile Include="..\..\Code\Event.cpp" />
+    <ClCompile Include="..\..\Code\Core\Application.cpp" />
+    <ClCompile Include="..\..\Code\Core\Event.cpp" />
+    <ClCompile Include="..\..\Code\Core\EventObserver.cpp" />
+    <ClCompile Include="..\..\Code\Core\EventSubject.cpp" />
     <ClCompile Include="..\..\Code\main.cpp" />
-    <ClCompile Include="..\..\Code\Window.cpp" />
+    <ClCompile Include="..\..\Code\Math\MathTests.cpp" />
+    <ClCompile Include="..\..\Code\Math\Point.cpp" />
+    <ClCompile Include="..\..\Code\Math\Vector3.cpp" />
+    <ClCompile Include="..\..\Code\Pong\Ball.cpp" />
+    <ClCompile Include="..\..\Code\Pong\Paddle.cpp" />
+    <ClCompile Include="..\..\Code\Pong\Pong.cpp" />
+    <ClCompile Include="..\..\Code\Pong\Scoreboard.cpp" />
+    <ClCompile Include="..\..\Code\Types\Entity.cpp" />
+    <ClCompile Include="..\..\Code\Types\IdentifiableObject.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

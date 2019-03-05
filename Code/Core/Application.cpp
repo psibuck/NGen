@@ -32,7 +32,7 @@ namespace EMILY
 #endif // DEBUG
         
         m_game_window = std::make_unique<sf::RenderWindow>( sf::VideoMode( m_height, m_width ), m_app_name );
-        Renderer::initialise();
+        //Renderer::initialise();
         m_is_running = true;
     }
     
@@ -78,7 +78,7 @@ namespace EMILY
     //--
     void Application::shutdown( void )
     {
-        Renderer::get_instance().shutdown();
+        //Renderer::get_instance().shutdown();
         m_game_window->close();
     }
     

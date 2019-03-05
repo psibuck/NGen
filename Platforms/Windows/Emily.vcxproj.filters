@@ -26,32 +26,110 @@
     <Filter Include="External Libraries\Mac">
       <UniqueIdentifier>{8a890cf9-3a27-4b38-ae68-084f1f752623}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Code\Math">
+      <UniqueIdentifier>{67ef6b64-058f-444d-965c-a20522252529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Core">
+      <UniqueIdentifier>{c9ac048b-a377-4932-8a7e-e2e49918a1be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Pong">
+      <UniqueIdentifier>{7a12d1cc-e801-4d5f-bfbc-bbd8f53583c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Code\Types">
+      <UniqueIdentifier>{d3e0acf4-719d-4180-826b-3e783a0f5bfb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="emily\ResourcePath.hpp">
       <Filter>Resource Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Code\Application.h">
-      <Filter>Code</Filter>
+    <ClInclude Include="..\..\Code\Core\Application.h">
+      <Filter>Code\Core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Code\Event.h">
-      <Filter>Code</Filter>
+    <ClInclude Include="..\..\Code\Core\Assert.h">
+      <Filter>Code\Core</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Code\Window.h">
-      <Filter>Code</Filter>
+    <ClInclude Include="..\..\Code\Core\Event.h">
+      <Filter>Code\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Core\EventObserver.h">
+      <Filter>Code\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Core\EventSubject.h">
+      <Filter>Code\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\MathTests.h">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\Point.h">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Math\Vector3.h">
+      <Filter>Code\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Pong\Ball.h">
+      <Filter>Code\Pong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Pong\Paddle.h">
+      <Filter>Code\Pong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Pong\Pong.h">
+      <Filter>Code\Pong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Pong\Scoreboard.h">
+      <Filter>Code\Pong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Types\Entity.h">
+      <Filter>Code\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Types\IdentifiableObject.h">
+      <Filter>Code\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Code\Types\Identifier.h">
+      <Filter>Code\Types</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Code\Application.cpp">
-      <Filter>Code</Filter>
+    <ClCompile Include="..\..\Code\Core\Application.cpp">
+      <Filter>Code\Core</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Code\Event.cpp">
-      <Filter>Code</Filter>
+    <ClCompile Include="..\..\Code\Core\Event.cpp">
+      <Filter>Code\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Core\EventObserver.cpp">
+      <Filter>Code\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Core\EventSubject.cpp">
+      <Filter>Code\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Math\MathTests.cpp">
+      <Filter>Code\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Math\Point.cpp">
+      <Filter>Code\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Math\Vector3.cpp">
+      <Filter>Code\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Pong\Ball.cpp">
+      <Filter>Code\Pong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Pong\Paddle.cpp">
+      <Filter>Code\Pong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Pong\Pong.cpp">
+      <Filter>Code\Pong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Pong\Scoreboard.cpp">
+      <Filter>Code\Pong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Types\Entity.cpp">
+      <Filter>Code\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Code\Types\IdentifiableObject.cpp">
+      <Filter>Code\Types</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Code\main.cpp">
-      <Filter>Code</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Code\Window.cpp">
       <Filter>Code</Filter>
     </ClCompile>
   </ItemGroup>

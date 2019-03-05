@@ -75,13 +75,13 @@ void Pong::check_for_collision( void )
     const float y_position = ball_position.get_y();
     const float ball_radius = m_ball->get_radius();
     
-    if( !collides( x_position + ball_radius, 0, window_bounds.x ) )
+    if( !collides( x_position + ball_radius, 0, float( window_bounds.x )) )
     {
         m_ball->bounce( AXIS::X );
         //! SCORE
     }
     
-    if( !collides( y_position + ball_radius, 0, window_bounds.y ))
+    if( !collides( y_position + ball_radius, 0, float( window_bounds.y )))
     {
         m_ball->bounce( AXIS::Y );
     }

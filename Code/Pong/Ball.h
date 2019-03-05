@@ -39,8 +39,8 @@ private:
     
     std::unique_ptr<sf::CircleShape> ball{ nullptr };
     EMILY::Point m_position{ 100.0f, 100.0f };
-    float m_x_speed{ 0.8f };
-    float m_y_speed{ 0.8f };
+    float m_x_speed{ 0.05f };
+    float m_y_speed{ 0.05f };
     const float m_diameter{ 10.0f };
 };
 

@@ -36,9 +36,9 @@ private:
     std::unique_ptr<sf::RectangleShape> paddle{ nullptr };
     float x{ 0.0f };
     float y{ 0.0f };
-    const float height{ 85.0f };
+    const float height{ 150.0f };
     const float width{ 15.0f };
-    const float speed{ 1.0f };
+    const float speed{ 0.5f };
     bool in_motion{ false };
     DIRECTION current_direction{ DIRECTION::UP };
 };
