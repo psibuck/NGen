@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		21747D452219D4E000118D6F /* Window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D402219D4E000118D6F /* Window.cpp */; };
 		21747D462219D4E000118D6F /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D432219D4E000118D6F /* Event.cpp */; };
 		21747D472219D4E000118D6F /* Application.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D442219D4E000118D6F /* Application.cpp */; };
 		21747D492219D4FD00118D6F /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D482219D4FD00118D6F /* main.cpp */; };
@@ -41,9 +40,7 @@
 /* Begin PBXFileReference section */
 		21747D162210973100118D6F /* Emily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Emily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21747D3F2219D4E000118D6F /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
-		21747D402219D4E000118D6F /* Window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Window.cpp; sourceTree = "<group>"; };
 		21747D412219D4E000118D6F /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
-		21747D422219D4E000118D6F /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
 		21747D432219D4E000118D6F /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
 		21747D442219D4E000118D6F /* Application.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Application.cpp; sourceTree = "<group>"; };
 		21747D482219D4FD00118D6F /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -125,8 +122,6 @@
 				21747D692225D6C600118D6F /* Renderer */,
 				21747D442219D4E000118D6F /* Application.cpp */,
 				21747D412219D4E000118D6F /* Application.h */,
-				21747D402219D4E000118D6F /* Window.cpp */,
-				21747D422219D4E000118D6F /* Window.h */,
 				21747D432219D4E000118D6F /* Event.cpp */,
 				21747D3F2219D4E000118D6F /* Event.h */,
 				21747D53221BE19800118D6F /* EventSubject.cpp */,
@@ -286,7 +281,6 @@
 				21747D84222A9F8600118D6F /* Pong.cpp in Sources */,
 				21747D50221AC15700118D6F /* IdentifiableObject.cpp in Sources */,
 				21747D702225D6C600118D6F /* Shader.cpp in Sources */,
-				21747D452219D4E000118D6F /* Window.cpp in Sources */,
 				21747D87222AA18300118D6F /* Ball.cpp in Sources */,
 				21747D492219D4FD00118D6F /* main.cpp in Sources */,
 				21747D5E221EB79A00118D6F /* MathTests.cpp in Sources */,

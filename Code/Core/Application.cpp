@@ -31,7 +31,7 @@ namespace EMILY
         MathTests::run();
 #endif // DEBUG
         
-        m_game_window = std::make_unique<Window>( m_app_name, m_height, m_width );
+        m_game_window = std::make_unique<sf::RenderWindow>( sf::VideoMode( m_height, m_width ), m_app_name );
         Renderer::initialise();
         m_is_running = true;
     }
@@ -57,8 +57,11 @@ namespace EMILY
     //--
     void Application::process_events( void )
     {
-        // First process the SFML events
-        m_game_window->process_events();
+        sf::Event event;
+        while( m_game_window->pollEvent( event ))
+        {
+            handle_event( event );
+        }
     }
     
     //--
@@ -77,6 +80,31 @@ namespace EMILY
     {
         Renderer::get_instance().shutdown();
         m_game_window->close();
+    }
+    
+    //--
+    // Returns a pointer to the game window
+    //--
+    sf::RenderWindow* Application::get_game_window()
+    {
+        return m_game_window.get();
+    }
+    
+    //--
+    // Handles the event gathered
+    //--
+    void Application::handle_event( const sf::Event event )
+    {
+        if ( event.type == sf::Event::Closed )
+        {
+            m_game_window->close();
+        }
+        
+        // Escape pressed: exit
+        if ( event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape )
+        {
+            m_game_window->close();
+        }
     }
 }
 

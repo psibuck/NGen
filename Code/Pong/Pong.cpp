@@ -24,8 +24,8 @@ void Pong::initialise( void )
 {
     current_state = GAME_STATE::IN_GAME;
     m_ball = std::make_unique<Ball>();
-    m_paddle_one = std::make_unique<Paddle>( 1400.0f, 50.0f );
-    m_paddle_two = std::make_unique<Paddle>( 40.0f, 850.0f );
+    m_paddle_one = std::make_unique<Paddle>( 40.0f, 850.0f );
+    m_paddle_two = std::make_unique<Paddle>( 1400.0f, 50.0f );
     super::initialise();
 }
 
@@ -48,6 +48,8 @@ void Pong::update( void )
 {
     check_for_collision();
     m_ball->update();
+    m_paddle_one->update();
+    m_paddle_two->update();
 }
 
 //--
@@ -57,7 +59,7 @@ void Pong::check_for_collision( void )
 {
     auto collides = []( const float pos, const float l_bound, const float u_bound )
     {
-        return !(( pos > l_bound ) && ( pos < u_bound ));
+        return (( pos > l_bound ) && ( pos < u_bound ));
     };
     
     const EMILY::Point ball_position = m_ball->get_position();
@@ -66,14 +68,87 @@ void Pong::check_for_collision( void )
     const float y_position = ball_position.get_y();
     const float ball_radius = m_ball->get_radius();
     
-    if( collides( x_position + ball_radius, 0, window_bounds.x ) )
+    if( !collides( x_position + ball_radius, 0, window_bounds.x ) )
     {
         m_ball->bounce( AXIS::X );
         //! SCORE
     }
     
-    if( collides( y_position + ball_radius, 0, window_bounds.y ))
+    if( !collides( y_position + ball_radius, 0, window_bounds.y ))
     {
         m_ball->bounce( AXIS::Y );
+    }
+    
+    sf::RectangleShape* paddle_one = m_paddle_one->get_paddle();
+    if( collides( y_position, paddle_one->getPosition().y, paddle_one->getPosition().y + paddle_one->getSize().y )
+        && collides( x_position - ball_radius, paddle_one->getPosition().x, paddle_one->getPosition().x + paddle_one->getSize().x ))
+    {
+        m_ball->bounce( AXIS::X );
+    }
+    
+    sf::RectangleShape* paddle_two = m_paddle_two->get_paddle();
+    if( collides( y_position, paddle_two->getPosition().y, paddle_two->getPosition().y + paddle_two->getSize().y )
+       && collides( x_position + ball_radius, paddle_two->getPosition().x, paddle_two->getPosition().x + paddle_two->getSize().x ))
+    {
+        m_ball->bounce( AXIS::X );
+    }
+    
+}
+
+//--
+// Handles events
+//--
+void Pong::handle_event(sf::Event event)
+{
+    switch( event.type )
+    {
+        case sf::Event::KeyPressed:
+            handle_keypress( event.key.code );
+            break;
+        case sf::Event::KeyReleased:
+            handle_key_release( event.key.code );
+            break;
+        default:
+            break;
+    }
+}
+
+//--
+// Handles keypress
+//--
+void Pong::handle_keypress( const sf::Keyboard::Key key )
+{
+    switch( key )
+    {
+        case sf::Keyboard::Up:
+        case sf::Keyboard::Down:
+            m_paddle_two->handle_keypress( key );
+            break;
+        case sf::Keyboard::Q:
+        case sf::Keyboard::A:
+            m_paddle_one->handle_keypress( key );
+            break;
+        default:
+            break;
+    }
+}
+
+//--
+// Handles key release
+//--
+void Pong::handle_key_release( const sf::Keyboard::Key key )
+{
+    switch( key )
+    {
+        case sf::Keyboard::Up:
+        case sf::Keyboard::Down:
+            m_paddle_two->handle_key_release( key );
+            break;
+        case sf::Keyboard::Q:
+        case sf::Keyboard::A:
+            m_paddle_one->handle_key_release( key );
+            break;
+        default:
+            break;
     }
 }

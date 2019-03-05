@@ -9,11 +9,10 @@
 #ifndef Application_h
 #define Application_h
 
-#include "Code/Core/Window.h"
-
 #include <memory>
 #include <string>
 #include <stdio.h>
+#include <SFML/Graphics.hpp>
 
 // Forward Declares
 namespace EMILY
@@ -37,10 +36,13 @@ namespace EMILY
         virtual void clear( void );
         virtual void display( void );
         void shutdown( void );
-        sf::RenderWindow* get_game_window( void ) { return m_game_window->get_window(); }
+        
+    protected:
+        virtual void handle_event( const sf::Event event );
+        sf::RenderWindow* get_game_window( void );
         
     private:
-        std::unique_ptr<Window> m_game_window{ nullptr };
+        std::unique_ptr<sf::RenderWindow> m_game_window{ nullptr };
         bool m_is_running{ false };
         
         //! default name height and width

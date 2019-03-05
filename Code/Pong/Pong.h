@@ -12,6 +12,7 @@
 #include "Code/Core/Application.h"
 #include "Code/Pong/Ball.h"
 #include "Code/Pong/Paddle.h"
+#include <SFML/Graphics.hpp>
 
 enum class GAME_STATE : short int
 {
@@ -34,10 +35,13 @@ public:
     void initialise( void ) override;
     void display( void ) override;
     void update( void ) override;
-    void handle_events( )
+    
+    virtual void handle_event( sf::Event event ) final;
     
 private:
     void check_for_collision( void );
+    void handle_keypress( const sf::Keyboard::Key key  );
+    void handle_key_release( const sf::Keyboard::Key key );
     
     GAME_STATE current_state{ GAME_STATE::MAIN_MENU };
     bool one_player{ true };

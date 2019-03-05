@@ -33,12 +33,14 @@ public:
     void bounce( const AXIS axis );
     
     float get_radius( void ) const;
-    EMILY::Point& get_position( void );
+    EMILY::Point get_position( void );
     
 private:
-    EMILY::Point m_position{ 0.0f, 0.0f };
-    float m_x_speed{ 2.0f };
-    float m_y_speed{ 2.0f };
+    
+    std::unique_ptr<sf::CircleShape> ball{ nullptr };
+    EMILY::Point m_position{ 100.0f, 100.0f };
+    float m_x_speed{ 0.8f };
+    float m_y_speed{ 0.8f };
     const float m_diameter{ 10.0f };
 };
 

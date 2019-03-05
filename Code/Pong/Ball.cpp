@@ -16,6 +16,11 @@
 //--
 Ball::Ball( void ) : EMILY::Entity( 'ball' )
 {
+    ball = std::make_unique<sf::CircleShape>( m_diameter );
+    ball->setPosition( m_position.get_x(), m_position.get_y() );
+    ball->setFillColor( sf::Color( 0, 0, 0 ) );
+    ball->setOutlineThickness( 2.0f );
+    ball->setOutlineColor( sf::Color( 255, 255, 255 ) );
 }
 
 //--
@@ -23,8 +28,7 @@ Ball::Ball( void ) : EMILY::Entity( 'ball' )
 //--
 void Ball::update( void )
 {
-    m_position.set_x( m_position.get_x() + m_x_speed );
-    m_position.set_y( m_position.get_y() + m_y_speed );
+    ball->setPosition( ball->getPosition().x + m_x_speed, ball->getPosition().y + m_y_speed );
 }
 
 //--
@@ -32,12 +36,7 @@ void Ball::update( void )
 //--
 void Ball::draw( sf::RenderWindow* window ) const
 {
-    sf::CircleShape ball = sf::CircleShape( m_diameter );
-    ball.setPosition( m_position.get_x(), m_position.get_y() );
-    ball.setFillColor(sf::Color(0, 0, 0));
-    ball.setOutlineThickness(2.0f);
-    ball.setOutlineColor(sf::Color(255, 255, 255));
-    window->draw( ball );
+    window->draw( *ball );
 }
 
 //--
@@ -66,7 +65,8 @@ float Ball::get_radius( void ) const
 //--
 // Provides a public interface to get the ball position
 //--
-EMILY::Point& Ball::get_position( void )
+EMILY::Point Ball::get_position( void )
 {
-    return m_position;
+    const EMILY::Point pos_vec = EMILY::Point( ball->getPosition().x, ball->getPosition().y );
+    return pos_vec;
 }
