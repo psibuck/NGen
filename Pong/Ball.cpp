@@ -6,7 +6,7 @@
 //  Copyright © 2019 Archie Buck. All rights reserved.
 //
 
-#include "Code/Pong/Ball.h"
+#include "Pong/Ball.h"
 
 #include "Code/Math/Point.h"
 

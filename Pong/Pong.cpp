@@ -6,7 +6,7 @@
 //  Copyright © 2019 Archie Buck. All rights reserved.
 //
 
-#include "Code/Pong/Pong.h"
+#include "Pong/Pong.h"
 
 #include "Code/Core/Renderer/Renderer.h"
 

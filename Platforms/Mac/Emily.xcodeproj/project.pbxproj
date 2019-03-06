@@ -19,16 +19,27 @@
 		21747D712225D6C600118D6F /* Buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D6D2225D6C600118D6F /* Buffer.cpp */; };
 		21747D722225D6C600118D6F /* Renderer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D6F2225D6C600118D6F /* Renderer.cpp */; };
 		21747D802227E2A100118D6F /* Point.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D7F2227E2A100118D6F /* Point.cpp */; };
-		21747D84222A9F8600118D6F /* Pong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D83222A9F8600118D6F /* Pong.cpp */; };
-		21747D87222AA18300118D6F /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D86222AA18300118D6F /* Ball.cpp */; };
-		21747D8A222AA19000118D6F /* Paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D89222AA19000118D6F /* Paddle.cpp */; };
 		21747D8D222AAE4200118D6F /* Entity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D8C222AAE4200118D6F /* Entity.cpp */; };
-		21747D90222E56EF00118D6F /* Scoreboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747D8F222E56EF00118D6F /* Scoreboard.cpp */; };
-		21747D99222EE88C00118D6F /* Caviar_Dreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747D94222EE88C00118D6F /* Caviar_Dreams_Bold.ttf */; };
-		21747D9A222EE88C00118D6F /* CaviarDreams_BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747D95222EE88C00118D6F /* CaviarDreams_BoldItalic.ttf */; };
-		21747D9B222EE88C00118D6F /* CaviarDreams.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747D96222EE88C00118D6F /* CaviarDreams.ttf */; };
-		21747D9C222EE88C00118D6F /* CaviarDreams_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747D97222EE88C00118D6F /* CaviarDreams_Italic.ttf */; };
-		21747D9D222EE88C00118D6F /* Nymphont License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 21747D98222EE88C00118D6F /* Nymphont License.txt */; };
+		21747DF5222FC7D500118D6F /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747DC5222FC7D500118D6F /* OpenSans-Semibold.ttf */; };
+		21747DF6222FC7D500118D6F /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747DC6222FC7D500118D6F /* OpenSans-Light.ttf */; };
+		21747DF7222FC7D500118D6F /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747DC7222FC7D500118D6F /* OpenSans-Italic.ttf */; };
+		21747DF8222FC7D500118D6F /* Apache License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 21747DC8222FC7D500118D6F /* Apache License.txt */; };
+		21747DF9222FC7D500118D6F /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747DC9222FC7D500118D6F /* OpenSans-ExtraBold.ttf */; };
+		21747DFA222FC7D500118D6F /* OpenSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747DCA222FC7D500118D6F /* OpenSans-LightItalic.ttf */; };
+		21747DFB222FC7D500118D6F /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747DCB222FC7D500118D6F /* OpenSans-Bold.ttf */; };
+		21747DFC222FC7D500118D6F /* OpenSans-SemiboldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747DCC222FC7D500118D6F /* OpenSans-SemiboldItalic.ttf */; };
+		21747DFD222FC7D500118D6F /* OpenSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747DCD222FC7D500118D6F /* OpenSans-ExtraBoldItalic.ttf */; };
+		21747DFE222FC7D500118D6F /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747DCE222FC7D500118D6F /* OpenSans-Regular.ttf */; };
+		21747DFF222FC7D500118D6F /* OpenSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747DCF222FC7D500118D6F /* OpenSans-BoldItalic.ttf */; };
+		21747E00222FC7D500118D6F /* Caviar_Dreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747DD1222FC7D500118D6F /* Caviar_Dreams_Bold.ttf */; };
+		21747E01222FC7D500118D6F /* CaviarDreams_BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747DD2222FC7D500118D6F /* CaviarDreams_BoldItalic.ttf */; };
+		21747E02222FC7D500118D6F /* CaviarDreams.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747DD3222FC7D500118D6F /* CaviarDreams.ttf */; };
+		21747E03222FC7D500118D6F /* CaviarDreams_Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21747DD4222FC7D500118D6F /* CaviarDreams_Italic.ttf */; };
+		21747E04222FC7D500118D6F /* Nymphont License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 21747DD5222FC7D500118D6F /* Nymphont License.txt */; };
+		21747E22222FC7F500118D6F /* Pong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747E1B222FC7F500118D6F /* Pong.cpp */; };
+		21747E23222FC7F500118D6F /* Scoreboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747E1C222FC7F500118D6F /* Scoreboard.cpp */; };
+		21747E24222FC7F500118D6F /* Paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747E1D222FC7F500118D6F /* Paddle.cpp */; };
+		21747E25222FC7F500118D6F /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747E21222FC7F500118D6F /* Ball.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,22 +82,32 @@
 		21747D76222673C300118D6F /* Assert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Assert.h; sourceTree = "<group>"; };
 		21747D7C2227E1F400118D6F /* Point.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Point.h; sourceTree = "<group>"; };
 		21747D7F2227E2A100118D6F /* Point.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Point.cpp; sourceTree = "<group>"; };
-		21747D82222A9F8600118D6F /* Pong.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pong.h; sourceTree = "<group>"; };
-		21747D83222A9F8600118D6F /* Pong.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Pong.cpp; sourceTree = "<group>"; };
-		21747D85222AA18300118D6F /* Ball.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
-		21747D86222AA18300118D6F /* Ball.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Ball.cpp; sourceTree = "<group>"; };
-		21747D88222AA19000118D6F /* Paddle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Paddle.h; sourceTree = "<group>"; };
-		21747D89222AA19000118D6F /* Paddle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Paddle.cpp; sourceTree = "<group>"; };
 		21747D8B222AAE4200118D6F /* Entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
 		21747D8C222AAE4200118D6F /* Entity.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Entity.cpp; sourceTree = "<group>"; };
-		21747D8E222E56EF00118D6F /* Scoreboard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scoreboard.h; sourceTree = "<group>"; };
-		21747D8F222E56EF00118D6F /* Scoreboard.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Scoreboard.cpp; sourceTree = "<group>"; };
-		21747D94222EE88C00118D6F /* Caviar_Dreams_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Caviar_Dreams_Bold.ttf; sourceTree = "<group>"; };
-		21747D95222EE88C00118D6F /* CaviarDreams_BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_BoldItalic.ttf; sourceTree = "<group>"; };
-		21747D96222EE88C00118D6F /* CaviarDreams.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams.ttf; sourceTree = "<group>"; };
-		21747D97222EE88C00118D6F /* CaviarDreams_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Italic.ttf; sourceTree = "<group>"; };
-		21747D98222EE88C00118D6F /* Nymphont License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Nymphont License.txt"; sourceTree = "<group>"; };
-		21747D9E222EEA1800118D6F /* CaviarDreams.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = CaviarDreams.ttf; path = ../../CaviarDreams.ttf; sourceTree = "<group>"; };
+		21747DC5222FC7D500118D6F /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		21747DC6222FC7D500118D6F /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
+		21747DC7222FC7D500118D6F /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
+		21747DC8222FC7D500118D6F /* Apache License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Apache License.txt"; sourceTree = "<group>"; };
+		21747DC9222FC7D500118D6F /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		21747DCA222FC7D500118D6F /* OpenSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		21747DCB222FC7D500118D6F /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		21747DCC222FC7D500118D6F /* OpenSans-SemiboldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiboldItalic.ttf"; sourceTree = "<group>"; };
+		21747DCD222FC7D500118D6F /* OpenSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		21747DCE222FC7D500118D6F /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		21747DCF222FC7D500118D6F /* OpenSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		21747DD1222FC7D500118D6F /* Caviar_Dreams_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Caviar_Dreams_Bold.ttf; sourceTree = "<group>"; };
+		21747DD2222FC7D500118D6F /* CaviarDreams_BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_BoldItalic.ttf; sourceTree = "<group>"; };
+		21747DD3222FC7D500118D6F /* CaviarDreams.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams.ttf; sourceTree = "<group>"; };
+		21747DD4222FC7D500118D6F /* CaviarDreams_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Italic.ttf; sourceTree = "<group>"; };
+		21747DD5222FC7D500118D6F /* Nymphont License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Nymphont License.txt"; sourceTree = "<group>"; };
+		21747E1A222FC7F500118D6F /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		21747E1B222FC7F500118D6F /* Pong.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pong.cpp; sourceTree = "<group>"; };
+		21747E1C222FC7F500118D6F /* Scoreboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scoreboard.cpp; sourceTree = "<group>"; };
+		21747E1D222FC7F500118D6F /* Paddle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Paddle.cpp; sourceTree = "<group>"; };
+		21747E1E222FC7F500118D6F /* Pong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pong.h; sourceTree = "<group>"; };
+		21747E1F222FC7F500118D6F /* Scoreboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scoreboard.h; sourceTree = "<group>"; };
+		21747E20222FC7F500118D6F /* Paddle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paddle.h; sourceTree = "<group>"; };
+		21747E21222FC7F500118D6F /* Ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ball.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +124,11 @@
 		21747D0C2210973100118D6F = {
 			isa = PBXGroup;
 			children = (
-				21747D9E222EEA1800118D6F /* CaviarDreams.ttf */,
+				21747E19222FC7F500118D6F /* Pong */,
+				21747DC3222FC7D500118D6F /* Font */,
 				21747D4A2219D72100118D6F /* Emily-Info.plist */,
 				21747D172210973100118D6F /* Products */,
 				21747D3E2219D4E000118D6F /* Code */,
-				21747D91222E63F900118D6F /* Resources */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,7 +143,6 @@
 		21747D3E2219D4E000118D6F /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				21747D81222A9F7800118D6F /* Pong */,
 				21747D58221EB40E00118D6F /* Math */,
 				21747D4C221ABF4200118D6F /* Core */,
 				21747D4D221ABF4500118D6F /* Types */,
@@ -187,47 +207,60 @@
 			path = Renderer;
 			sourceTree = "<group>";
 		};
-		21747D81222A9F7800118D6F /* Pong */ = {
+		21747DC3222FC7D500118D6F /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				21747D83222A9F8600118D6F /* Pong.cpp */,
-				21747D82222A9F8600118D6F /* Pong.h */,
-				21747D86222AA18300118D6F /* Ball.cpp */,
-				21747D85222AA18300118D6F /* Ball.h */,
-				21747D89222AA19000118D6F /* Paddle.cpp */,
-				21747D88222AA19000118D6F /* Paddle.h */,
-				21747D8F222E56EF00118D6F /* Scoreboard.cpp */,
-				21747D8E222E56EF00118D6F /* Scoreboard.h */,
+				21747DC4222FC7D500118D6F /* open-sans */,
+				21747DD0222FC7D500118D6F /* Caviar-Dreams */,
 			);
-			path = Pong;
+			name = Font;
+			path = ../../Font;
 			sourceTree = "<group>";
 		};
-		21747D91222E63F900118D6F /* Resources */ = {
+		21747DC4222FC7D500118D6F /* open-sans */ = {
 			isa = PBXGroup;
 			children = (
-				21747D92222E641100118D6F /* Font */,
+				21747DC5222FC7D500118D6F /* OpenSans-Semibold.ttf */,
+				21747DC6222FC7D500118D6F /* OpenSans-Light.ttf */,
+				21747DC7222FC7D500118D6F /* OpenSans-Italic.ttf */,
+				21747DC8222FC7D500118D6F /* Apache License.txt */,
+				21747DC9222FC7D500118D6F /* OpenSans-ExtraBold.ttf */,
+				21747DCA222FC7D500118D6F /* OpenSans-LightItalic.ttf */,
+				21747DCB222FC7D500118D6F /* OpenSans-Bold.ttf */,
+				21747DCC222FC7D500118D6F /* OpenSans-SemiboldItalic.ttf */,
+				21747DCD222FC7D500118D6F /* OpenSans-ExtraBoldItalic.ttf */,
+				21747DCE222FC7D500118D6F /* OpenSans-Regular.ttf */,
+				21747DCF222FC7D500118D6F /* OpenSans-BoldItalic.ttf */,
 			);
-			path = Resources;
+			path = "open-sans";
 			sourceTree = "<group>";
 		};
-		21747D92222E641100118D6F /* Font */ = {
+		21747DD0222FC7D500118D6F /* Caviar-Dreams */ = {
 			isa = PBXGroup;
 			children = (
-				21747D93222EE88C00118D6F /* Caviar-Dreams */,
-			);
-			path = Font;
-			sourceTree = "<group>";
-		};
-		21747D93222EE88C00118D6F /* Caviar-Dreams */ = {
-			isa = PBXGroup;
-			children = (
-				21747D94222EE88C00118D6F /* Caviar_Dreams_Bold.ttf */,
-				21747D95222EE88C00118D6F /* CaviarDreams_BoldItalic.ttf */,
-				21747D96222EE88C00118D6F /* CaviarDreams.ttf */,
-				21747D97222EE88C00118D6F /* CaviarDreams_Italic.ttf */,
-				21747D98222EE88C00118D6F /* Nymphont License.txt */,
+				21747DD1222FC7D500118D6F /* Caviar_Dreams_Bold.ttf */,
+				21747DD2222FC7D500118D6F /* CaviarDreams_BoldItalic.ttf */,
+				21747DD3222FC7D500118D6F /* CaviarDreams.ttf */,
+				21747DD4222FC7D500118D6F /* CaviarDreams_Italic.ttf */,
+				21747DD5222FC7D500118D6F /* Nymphont License.txt */,
 			);
 			path = "Caviar-Dreams";
+			sourceTree = "<group>";
+		};
+		21747E19222FC7F500118D6F /* Pong */ = {
+			isa = PBXGroup;
+			children = (
+				21747E21222FC7F500118D6F /* Ball.cpp */,
+				21747E1A222FC7F500118D6F /* Ball.h */,
+				21747E1D222FC7F500118D6F /* Paddle.cpp */,
+				21747E20222FC7F500118D6F /* Paddle.h */,
+				21747E1B222FC7F500118D6F /* Pong.cpp */,
+				21747E1E222FC7F500118D6F /* Pong.h */,
+				21747E1C222FC7F500118D6F /* Scoreboard.cpp */,
+				21747E1F222FC7F500118D6F /* Scoreboard.h */,
+			);
+			name = Pong;
+			path = ../../Pong;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,11 +321,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				21747D99222EE88C00118D6F /* Caviar_Dreams_Bold.ttf in Resources */,
-				21747D9A222EE88C00118D6F /* CaviarDreams_BoldItalic.ttf in Resources */,
-				21747D9D222EE88C00118D6F /* Nymphont License.txt in Resources */,
-				21747D9C222EE88C00118D6F /* CaviarDreams_Italic.ttf in Resources */,
-				21747D9B222EE88C00118D6F /* CaviarDreams.ttf in Resources */,
+				21747DFE222FC7D500118D6F /* OpenSans-Regular.ttf in Resources */,
+				21747DFC222FC7D500118D6F /* OpenSans-SemiboldItalic.ttf in Resources */,
+				21747E04222FC7D500118D6F /* Nymphont License.txt in Resources */,
+				21747E01222FC7D500118D6F /* CaviarDreams_BoldItalic.ttf in Resources */,
+				21747DFD222FC7D500118D6F /* OpenSans-ExtraBoldItalic.ttf in Resources */,
+				21747E00222FC7D500118D6F /* Caviar_Dreams_Bold.ttf in Resources */,
+				21747DFF222FC7D500118D6F /* OpenSans-BoldItalic.ttf in Resources */,
+				21747DF7222FC7D500118D6F /* OpenSans-Italic.ttf in Resources */,
+				21747DFB222FC7D500118D6F /* OpenSans-Bold.ttf in Resources */,
+				21747DF8222FC7D500118D6F /* Apache License.txt in Resources */,
+				21747DFA222FC7D500118D6F /* OpenSans-LightItalic.ttf in Resources */,
+				21747E02222FC7D500118D6F /* CaviarDreams.ttf in Resources */,
+				21747DF6222FC7D500118D6F /* OpenSans-Light.ttf in Resources */,
+				21747DF5222FC7D500118D6F /* OpenSans-Semibold.ttf in Resources */,
+				21747E03222FC7D500118D6F /* CaviarDreams_Italic.ttf in Resources */,
+				21747DF9222FC7D500118D6F /* OpenSans-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,15 +372,15 @@
 				21747D54221BE19800118D6F /* EventSubject.cpp in Sources */,
 				21747D5B221EB42500118D6F /* Vector3.cpp in Sources */,
 				21747D712225D6C600118D6F /* Buffer.cpp in Sources */,
-				21747D8A222AA19000118D6F /* Paddle.cpp in Sources */,
-				21747D84222A9F8600118D6F /* Pong.cpp in Sources */,
+				21747E24222FC7F500118D6F /* Paddle.cpp in Sources */,
+				21747E25222FC7F500118D6F /* Ball.cpp in Sources */,
+				21747E23222FC7F500118D6F /* Scoreboard.cpp in Sources */,
+				21747E22222FC7F500118D6F /* Pong.cpp in Sources */,
 				21747D50221AC15700118D6F /* IdentifiableObject.cpp in Sources */,
 				21747D702225D6C600118D6F /* Shader.cpp in Sources */,
-				21747D87222AA18300118D6F /* Ball.cpp in Sources */,
 				21747D492219D4FD00118D6F /* main.cpp in Sources */,
 				21747D5E221EB79A00118D6F /* MathTests.cpp in Sources */,
 				21747D57221BE1C700118D6F /* EventObserver.cpp in Sources */,
-				21747D90222E56EF00118D6F /* Scoreboard.cpp in Sources */,
 				21747D8D222AAE4200118D6F /* Entity.cpp in Sources */,
 				21747D802227E2A100118D6F /* Point.cpp in Sources */,
 				21747D472219D4E000118D6F /* Application.cpp in Sources */,

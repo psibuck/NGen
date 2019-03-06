@@ -1,6 +1,6 @@
 
 #include "Code/Core/Application.h"
-#include "Code/Pong/Pong.h"
+#include "Pong/Pong.h"
 
 //int main(int, char const**)
 //{

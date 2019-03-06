@@ -6,7 +6,7 @@
 //  Copyright © 2019 Archie Buck. All rights reserved.
 //
 
-#include "Paddle.h"
+#include "Pong/Paddle.h"
 
 #include <SFML/Graphics.hpp>
 

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Archie Buck. All rights reserved.
 //
 
-#include "Code/Pong/Scoreboard.h"
+#include "Pong/Scoreboard.h"
 
 #include "Code/Math/Point.h"
 #include "Code/Core/Assert.h"
@@ -24,12 +24,11 @@ Scoreboard::Scoreboard( const EMILY::Point position, const EMILY::Point dimensio
     timer = std::make_unique<sf::Clock>();
     
     //sf::Font font;
-    //if( !font.loadFromFile( "CaviarDreams.ttf"))
+    //if( !font.loadFromFile( "/Users/Archie/Documents/Programming/C++/Engines/Emily/Font/open-sans/OpenSans-Regular.ttf" ))
     //{
-    //    ASSERT_FAILED( "Failed to load font" );
-    //}
     //
-    //if( !font.loadFromFile( "Platforms/Mac/Resources/Font/Caviar-Dreams/CaviarDreams.ttf"))
+    //}
+    //else if( !font.loadFromFile( "Font/open-sans/OpenSans-Regular.ttf"))
     //{
     //    ASSERT_FAILED( "Failed to load font" );
     //}

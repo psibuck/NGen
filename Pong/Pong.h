@@ -10,9 +10,9 @@
 #define Pong_h
 
 #include "Code/Core/Application.h"
-#include "Code/Pong/Ball.h"
-#include "Code/Pong/Paddle.h"
-#include "Code/Pong/Scoreboard.h"
+#include "Pong/Ball.h"
+#include "Pong/Paddle.h"
+#include "Pong/Scoreboard.h"
 #include <SFML/Graphics.hpp>
 
 enum class GAME_STATE : short int
