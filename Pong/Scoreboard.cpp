@@ -10,6 +10,7 @@
 
 #include "Code/Math/Point.h"
 #include "Code/Core/Assert.h"
+#include "Resources/Colours.h"
 
 //--
 // Constructor
@@ -19,7 +20,7 @@ Scoreboard::Scoreboard( const EMILY::Point position, const EMILY::Point dimensio
     board = std::make_unique<sf::RectangleShape>();
     board->setPosition( position.get_x(), position.get_y() );
     board->setSize( sf::Vector2f( dimensions.get_x(), dimensions.get_y() ));
-    board->setFillColor( sf::Color( 100, 100, 100 ));
+    board->setFillColor( EMILY::COLOURS::GREY );
     
     timer = std::make_unique<sf::Clock>();
     
@@ -38,7 +39,7 @@ Scoreboard::Scoreboard( const EMILY::Point position, const EMILY::Point dimensio
     player_one_score_text->setPosition( position.get_x() + dimensions.get_x()/4, y_text_coord );
     //player_one_score_text->setFont( font );
     player_one_score_text->setString( sf::String( "Test" ));
-    player_one_score_text->setFillColor( sf::Color( 255, 255, 255 ));
+    player_one_score_text->setFillColor( EMILY::COLOURS::WHITE );
     
     player_two_score_text = std::make_unique<sf::Text>();
     player_two_score_text->setPosition( position.get_x() + 3*(dimensions.get_x()/4), y_text_coord );

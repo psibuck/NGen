@@ -8,6 +8,7 @@
 
 #include "Pong/Paddle.h"
 
+#include "Resources/Colours.h"
 #include <SFML/Graphics.hpp>
 
 //--
@@ -20,7 +21,7 @@ Paddle::Paddle( const EMILY::Point position_in, const EMILY::Point y_bounds_in )
 
     paddle = std::make_unique<sf::RectangleShape>( sf::Vector2f( width, height ));
     paddle->setPosition( position_in.get_x(), y_bounds_in.get_y() / 2 );
-    paddle->setFillColor( sf::Color( 255, 255, 255 ));
+    paddle->setFillColor( EMILY::COLOURS::WHITE );
 }
 
 //--

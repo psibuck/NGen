@@ -9,6 +9,7 @@
 #include "Pong/Ball.h"
 
 #include "Code/Math/Point.h"
+#include "Resources/Colours.h"
 
 
 //--
@@ -18,9 +19,9 @@ Ball::Ball( void ) : EMILY::Entity( 'ball' )
 {
     ball = std::make_unique<sf::CircleShape>( m_diameter );
     ball->setPosition( m_position.get_x(), m_position.get_y() );
-    ball->setFillColor( sf::Color( 0, 0, 0 ) );
+    ball->setFillColor( EMILY::COLOURS::BLACK );
     ball->setOutlineThickness( 2.0f );
-    ball->setOutlineColor( sf::Color( 255, 255, 255 ) );
+    ball->setOutlineColor( EMILY::COLOURS::WHITE );
 }
 
 //--
