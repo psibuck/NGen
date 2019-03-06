@@ -80,8 +80,7 @@ void Pong::check_for_collision( void )
     
     if( !collides( x_position + ball_radius, 0, float( window_bounds.x )) )
     {
-        m_ball->bounce( AXIS::X );
-        //! SCORE
+        m_ball->reset();
     }
     
     if( !collides( y_position + ball_radius, 0, float( window_bounds.y )))
@@ -121,6 +120,8 @@ void Pong::handle_event(sf::Event event)
         default:
             break;
     }
+    
+    super::handle_event( event );
 }
 
 //--
@@ -161,4 +162,12 @@ void Pong::handle_key_release( const sf::Keyboard::Key key )
         default:
             break;
     }
+}
+
+//--
+// What should the game do when a point is scored
+//--
+void Pong::score( void )
+{
+    m_ball->reset();
 }

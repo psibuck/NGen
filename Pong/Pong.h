@@ -31,6 +31,7 @@ enum class DIFFICULTY : short int
 class Pong : public EMILY::Application
 {
     typedef EMILY::Application super;
+    
 public:
     Pong( void );
     void initialise( void ) override;
@@ -43,6 +44,7 @@ private:
     void check_for_collision( void );
     void handle_keypress( const sf::Keyboard::Key key  );
     void handle_key_release( const sf::Keyboard::Key key );
+    void score( void );
     
     GAME_STATE current_state{ GAME_STATE::MAIN_MENU };
     bool one_player{ true };

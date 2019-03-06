@@ -32,15 +32,15 @@ public:
     void update( void );
     void bounce( const AXIS axis );
     void speed_up( void );
+    void reset( void );
     float get_radius( void ) const;
     EMILY::Point get_position( void );
     
 private:
     
-    std::unique_ptr<sf::CircleShape> ball{ nullptr };
+    std::unique_ptr<sf::CircleShape> m_ball{ nullptr };
     EMILY::Point m_position{ 100.0f, 100.0f };
-    float m_x_speed{ 0.05f };
-    float m_y_speed{ 0.05f };
+    EMILY::Point m_speed{ 12.0f, 12.0f };
     const float m_diameter{ 10.0f };
 };
 

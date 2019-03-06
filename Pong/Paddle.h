@@ -37,7 +37,7 @@ private:
 	EMILY::Point y_bounds{ 0.0f, 0.0f };
     const float height{ 150.0f };
     const float width{ 15.0f };
-    const float speed{ 0.5f };
+    const float speed{ 10.0f };
     bool in_motion{ false };
     DIRECTION current_direction{ DIRECTION::UP };
 };

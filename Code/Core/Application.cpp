@@ -31,7 +31,8 @@ namespace EMILY
         MathTests::run();
 #endif // DEBUG
         
-        m_game_window = std::make_unique<sf::RenderWindow>( sf::VideoMode( m_height, m_width ), m_app_name );
+        m_game_window = std::make_unique<sf::RenderWindow>( sf::VideoMode( m_height, m_width ), m_app_name, sf::Style::None );
+        m_game_window->setFramerateLimit( 60 );
         //Renderer::initialise();
         m_is_running = true;
     }
@@ -104,6 +105,7 @@ namespace EMILY
         if ( event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Escape )
         {
             m_game_window->close();
+            m_is_running = false;
         }
     }
 }

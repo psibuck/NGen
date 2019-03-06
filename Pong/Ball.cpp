@@ -17,11 +17,11 @@
 //--
 Ball::Ball( void ) : EMILY::Entity( 'ball' )
 {
-    ball = std::make_unique<sf::CircleShape>( m_diameter );
-    ball->setPosition( m_position.get_x(), m_position.get_y() );
-    ball->setFillColor( EMILY::COLOURS::BLACK );
-    ball->setOutlineThickness( 2.0f );
-    ball->setOutlineColor( EMILY::COLOURS::WHITE );
+    m_ball = std::make_unique<sf::CircleShape>( m_diameter );
+    m_ball->setPosition( m_position.get_x(), m_position.get_y() );
+    m_ball->setFillColor( EMILY::COLOURS::BLACK );
+    m_ball->setOutlineThickness( 2.0f );
+    m_ball->setOutlineColor( EMILY::COLOURS::WHITE );
 }
 
 //--
@@ -29,7 +29,7 @@ Ball::Ball( void ) : EMILY::Entity( 'ball' )
 //--
 void Ball::update( void )
 {
-    ball->setPosition( ball->getPosition().x + m_x_speed, ball->getPosition().y + m_y_speed );
+    m_ball->setPosition( m_ball->getPosition().x + m_speed.get_x(), m_ball->getPosition().y + m_speed.get_y() );
 }
 
 //--
@@ -37,7 +37,7 @@ void Ball::update( void )
 //--
 void Ball::draw( sf::RenderWindow* window ) const
 {
-    window->draw( *ball );
+    window->draw( *m_ball );
 }
 
 //--
@@ -47,11 +47,11 @@ void Ball::bounce( const AXIS axis )
 {
     if( axis == AXIS::X )
     {
-        m_x_speed *= -1;
+        m_speed.set_x( m_speed.get_x() * -1 );
     }
     else
     {
-        m_y_speed *= -1;
+       m_speed.set_y( m_speed.get_y() * -1 );
     }
 }
 
@@ -68,7 +68,7 @@ float Ball::get_radius( void ) const
 //--
 EMILY::Point Ball::get_position( void )
 {
-    const EMILY::Point pos_vec = EMILY::Point( ball->getPosition().x, ball->getPosition().y );
+    const EMILY::Point pos_vec = EMILY::Point( m_ball->getPosition().x, m_ball->getPosition().y );
     return pos_vec;
 }
 
@@ -77,12 +77,21 @@ EMILY::Point Ball::get_position( void )
 //--
 void Ball::speed_up( void )
 {
-    if( m_x_speed > 0 )
+    if( m_speed.get_x() > 0 )
     {
-        m_x_speed += 0.1f;
+        m_speed.set_x( m_speed.get_x() + 0.1f );
     }
     else
     {
-        m_x_speed -= 0.1f;
+        m_speed.set_x( m_speed.get_x() - 0.1f );
     }
+}
+
+//--
+// Called when we want the ball to return to the middle and at the default speed - e.g after a point scored
+//--
+void Ball::reset()
+{
+    m_ball->setPosition( 100.0f, 100.0f );
+    m_speed = EMILY::Point( 15.0f, 15.0f );
 }
