@@ -26,7 +26,7 @@ Pong::Pong( void ) : EMILY::Application( "Pong", X_RESOLUTION, Y_RESOLUTION )
 void Pong::initialise( void )
 {
     current_state = GAME_STATE::IN_GAME;
-    m_ball = std::make_unique<Ball>();
+    m_ball = std::make_unique<Ball>( EMILY::Point( X_RESOLUTION/2, Y_RESOLUTION/2 ));
     m_paddle_one = std::make_unique<Paddle>( EMILY::Point( 40.0f, 850.0f ), EMILY::Point( 0.0f, Y_RESOLUTION ));
     m_paddle_two = std::make_unique<Paddle>( EMILY::Point( 1400.0f, 850.0f ), EMILY::Point( 0.0f, Y_RESOLUTION ));
     m_scoreboard = std::make_unique<Scoreboard>( EMILY::Point( 470, 200 ), EMILY::Point( 450, 250 ), 10.0f );
@@ -81,6 +81,14 @@ void Pong::check_for_collision( void )
     if( !collides( x_position + ball_radius, 0, float( window_bounds.x )) )
     {
         m_ball->reset();
+        if( x_position < 0 )
+        {
+            m_scoreboard->score( PLAYER::TWO );
+        }
+        else
+        {
+            m_scoreboard->score( PLAYER::ONE );
+        }
     }
     
     if( !collides( y_position + ball_radius, 0, float( window_bounds.y )))
@@ -96,7 +104,7 @@ void Pong::check_for_collision( void )
     }
     
     sf::RectangleShape* paddle_two = m_paddle_two->get_paddle();
-    if( collides( y_position, paddle_two->getPosition().y, paddle_two->getPosition().y + paddle_two->getSize().y )
+    if( collides( y_position + ball_radius, paddle_two->getPosition().y, paddle_two->getPosition().y + paddle_two->getSize().y )
        && collides( x_position + ball_radius, paddle_two->getPosition().x, paddle_two->getPosition().x + paddle_two->getSize().x ))
     {
         m_ball->bounce( AXIS::X );

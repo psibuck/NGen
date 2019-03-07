@@ -26,7 +26,7 @@ enum class AXIS : short int
 class Ball : public EMILY::Entity
 {
 public:
-    Ball( void );
+    Ball( const EMILY::Point start_position );
     
     void draw( sf::RenderWindow* window ) const;
     void update( void );
@@ -39,9 +39,11 @@ public:
 private:
     
     std::unique_ptr<sf::CircleShape> m_ball{ nullptr };
-    EMILY::Point m_position{ 100.0f, 100.0f };
-    EMILY::Point m_speed{ 12.0f, 12.0f };
+    EMILY::Point m_start_position;
+    EMILY::Point m_speed{ 8.0f, 8.0f };
     const float m_diameter{ 10.0f };
+    const float m_start_speed{ 8.0f };
+    const float m_max_speed{ 20.0f };
 };
 
 #endif /* Ball_hpp */

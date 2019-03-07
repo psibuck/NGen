@@ -10,6 +10,7 @@
 
 #include "Code/Math/Point.h"
 #include "Code/Core/Assert.h"
+#include "Code/Core/Converters.h"
 #include "Resources/Colours.h"
 
 //--
@@ -17,35 +18,36 @@
 //--
 Scoreboard::Scoreboard( const EMILY::Point position, const EMILY::Point dimensions, const float countdown )
 {
-    board = std::make_unique<sf::RectangleShape>();
-    board->setPosition( position.get_x(), position.get_y() );
-    board->setSize( sf::Vector2f( dimensions.get_x(), dimensions.get_y() ));
-    board->setFillColor( EMILY::COLOURS::GREY );
+    mp_board = std::make_unique<sf::RectangleShape>();
+    mp_board->setPosition( position.get_x(), position.get_y() );
+    mp_board->setSize( sf::Vector2f( dimensions.get_x(), dimensions.get_y() ));
+    mp_board->setFillColor( EMILY::COLOURS::GREY );
     
-    timer = std::make_unique<sf::Clock>();
+    mp_timer = std::make_unique<sf::Clock>();
     
-    //sf::Font font;
-    //if( !font.loadFromFile( "/Users/Archie/Documents/Programming/C++/Engines/Emily/Font/open-sans/OpenSans-Regular.ttf" ))
-    //{
-    //
-    //}
-    //else if( !font.loadFromFile( "Font/open-sans/OpenSans-Regular.ttf"))
-    //{
-    //    ASSERT_FAILED( "Failed to load font" );
-    //}
+    mp_scoreboard_font = std::make_unique<sf::Font>();
+    if( !mp_scoreboard_font->loadFromFile( "/Users/Archie/Documents/Programming/C++/Engines/Emily/Resources/Font/Caviar-Dreams/CaviarDreams.ttf" ))
+    {
+        ASSERT_FAILED( "Failed to load font" );
+    }
     
-    const float y_text_coord = dimensions.get_y() + 100;
-    player_one_score_text = std::make_unique<sf::Text>();
-    player_one_score_text->setPosition( position.get_x() + dimensions.get_x()/4, y_text_coord );
-    //player_one_score_text->setFont( font );
-    player_one_score_text->setString( sf::String( "Test" ));
-    player_one_score_text->setFillColor( EMILY::COLOURS::WHITE );
+    const float y_text_coord = dimensions.get_y() + 25;
+    mp_player_one_score_text = std::make_unique<sf::Text>();
+    mp_player_one_score_text->setPosition( position.get_x() + dimensions.get_x()/4, y_text_coord );
+    mp_player_one_score_text->setFont( *mp_scoreboard_font );
+    mp_player_one_score_text->setString( sf::String( "0" ));
+    mp_player_one_score_text->setCharacterSize( 50 );
+    mp_player_one_score_text->setFillColor( EMILY::COLOURS::WHITE );
     
-    player_two_score_text = std::make_unique<sf::Text>();
-    player_two_score_text->setPosition( position.get_x() + 3*(dimensions.get_x()/4), y_text_coord );
+    mp_player_two_score_text = std::make_unique<sf::Text>();
+    mp_player_two_score_text->setPosition( position.get_x() + 3*(dimensions.get_x()/4), y_text_coord );
+    mp_player_two_score_text->setFont( *mp_scoreboard_font );
+    mp_player_two_score_text->setString( sf::String( "0" ));
+    mp_player_two_score_text->setCharacterSize( 50 );
     
-    countdown_text = std::make_unique<sf::Text>();
-    countdown_text->setPosition( position.get_x() + dimensions.get_x()/2, y_text_coord );
+    mp_countdown_text = std::make_unique<sf::Text>();
+    mp_countdown_text->setPosition( position.get_x() + dimensions.get_x()/2, y_text_coord + 100 );
+    mp_countdown_text->setFont( *mp_scoreboard_font );
 }
 
 //--
@@ -53,9 +55,9 @@ Scoreboard::Scoreboard( const EMILY::Point position, const EMILY::Point dimensio
 //--
 bool Scoreboard::has_ticked( void )
 {
-    if( timer->getElapsedTime().asSeconds() > 10.0f )
+    if( mp_timer->getElapsedTime().asSeconds() > 10.0f )
     {
-        timer->restart();
+        mp_timer->restart();
         return true;
     }
     return false;
@@ -66,10 +68,10 @@ bool Scoreboard::has_ticked( void )
 //--
 void Scoreboard::draw(sf::RenderWindow *window) const
 {
-    window->draw( *board );
-    window->draw( *player_one_score_text );
-    window->draw( *player_two_score_text );
-    window->draw( *countdown_text );
+    window->draw( *mp_board );
+    window->draw( *mp_player_one_score_text );
+    window->draw( *mp_player_two_score_text );
+    window->draw( *mp_countdown_text );
 }
 
 //--
@@ -77,5 +79,24 @@ void Scoreboard::draw(sf::RenderWindow *window) const
 //--
 void Scoreboard::update( void )
 {
-    countdown_text->setString( sf::String( char( timer->getElapsedTime().asSeconds() )));
+    mp_countdown_text->setString( sf::String( EMILY::string_from_int( m_time_to_speed_up - (int)mp_timer->getElapsedTime().asSeconds() )));
 }
+
+//--
+// Increments the score
+//--
+void Scoreboard::score(const PLAYER player)
+{
+    switch ( player )
+    {
+        case PLAYER::ONE:
+            m_player_one_score++;
+            mp_player_one_score_text->setString( sf::String( EMILY::string_from_int( m_player_one_score )));
+            break;
+        case PLAYER::TWO:
+            m_player_two_score++;
+            mp_player_two_score_text->setString( sf::String( EMILY::string_from_int( m_player_two_score )));
+            break;
+    };
+}
+

@@ -15,10 +15,11 @@
 //--
 // Constructor
 //--
-Ball::Ball( void ) : EMILY::Entity( 'ball' )
+Ball::Ball( const EMILY::Point start_position )
+: EMILY::Entity( 'ball' ), m_start_position( start_position )
 {
     m_ball = std::make_unique<sf::CircleShape>( m_diameter );
-    m_ball->setPosition( m_position.get_x(), m_position.get_y() );
+    m_ball->setPosition( m_start_position.get_x(), m_start_position.get_y() );
     m_ball->setFillColor( EMILY::COLOURS::BLACK );
     m_ball->setOutlineThickness( 2.0f );
     m_ball->setOutlineColor( EMILY::COLOURS::WHITE );
@@ -79,12 +80,14 @@ void Ball::speed_up( void )
 {
     if( m_speed.get_x() > 0 )
     {
-        m_speed.set_x( m_speed.get_x() + 0.1f );
+        m_speed.set_x( m_speed.get_x() + 1.0f );
     }
     else
     {
-        m_speed.set_x( m_speed.get_x() - 0.1f );
+        m_speed.set_x( m_speed.get_x() - 1.0f );
     }
+    sf::Color current_colour = m_ball->getOutlineColor();
+    m_ball->setOutlineColor( sf::Color( 255, current_colour.g -= 25, current_colour.b -= 25 ));
 }
 
 //--
@@ -92,6 +95,7 @@ void Ball::speed_up( void )
 //--
 void Ball::reset()
 {
-    m_ball->setPosition( 100.0f, 100.0f );
-    m_speed = EMILY::Point( 15.0f, 15.0f );
+    m_ball->setPosition( m_start_position.get_x(), m_start_position.get_y() );
+    m_speed = EMILY::Point( m_start_speed, m_start_speed );
+    m_ball->setOutlineColor( EMILY::COLOURS::WHITE );
 }

@@ -109,6 +109,7 @@
 		21747E42222FCAC700118D6F /* Paddle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paddle.h; sourceTree = "<group>"; };
 		21747E43222FCAC700118D6F /* Ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ball.cpp; sourceTree = "<group>"; };
 		21747E58222FCB0400118D6F /* Colours.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colours.h; sourceTree = "<group>"; };
+		21747E5922312BE900118D6F /* Converters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Converters.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +167,7 @@
 				21747D56221BE1C700118D6F /* EventObserver.cpp */,
 				21747D55221BE1C700118D6F /* EventObserver.h */,
 				21747D76222673C300118D6F /* Assert.h */,
+				21747E5922312BE900118D6F /* Converters.h */,
 			);
 			path = Core;
 			sourceTree = "<group>";
