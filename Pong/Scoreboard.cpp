@@ -98,5 +98,6 @@ void Scoreboard::score(const PLAYER player)
             mp_player_two_score_text->setString( sf::String( EMILY::string_from_int( m_player_two_score )));
             break;
     };
+    mp_timer->restart();
 }
 
