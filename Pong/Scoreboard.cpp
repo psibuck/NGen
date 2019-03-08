@@ -26,27 +26,35 @@ Scoreboard::Scoreboard( const EMILY::Point position, const EMILY::Point dimensio
     mp_timer = std::make_unique<sf::Clock>();
     
     mp_scoreboard_font = std::make_unique<sf::Font>();
-    if( !mp_scoreboard_font->loadFromFile( "/Users/Archie/Documents/Programming/C++/Engines/Emily/Resources/Font/Caviar-Dreams/CaviarDreams.ttf" ))
+#ifdef _WIN32
+    if ( !mp_scoreboard_font->loadFromFile( "C:/Programming/Engines/Emily/emily-engine/Resources/Font/Caviar-Dreams/CaviarDreams.ttf" ) )
     {
         ASSERT_FAILED( "Failed to load font" );
     }
+#else
+    if ( !mp_scoreboard_font->loadFromFile( "/Users/Archie/Documents/Programming/C++/Engines/Emily/Resources/Font/Caviar-Dreams/CaviarDreams.ttf" ) )
+    {
+        ASSERT_FAILED( "Failed to load font" );
+    }
+#endif // _WIN32
     
+    const int text_size = 75;
     const float y_text_coord = dimensions.get_y() + 25;
     mp_player_one_score_text = std::make_unique<sf::Text>();
-    mp_player_one_score_text->setPosition( position.get_x() + dimensions.get_x()/4, y_text_coord );
+    mp_player_one_score_text->setPosition( position.get_x() + dimensions.get_x()/4 - 45, y_text_coord );
     mp_player_one_score_text->setFont( *mp_scoreboard_font );
     mp_player_one_score_text->setString( sf::String( "0" ));
-    mp_player_one_score_text->setCharacterSize( 50 );
+    mp_player_one_score_text->setCharacterSize( text_size );
     mp_player_one_score_text->setFillColor( EMILY::COLOURS::WHITE );
     
     mp_player_two_score_text = std::make_unique<sf::Text>();
     mp_player_two_score_text->setPosition( position.get_x() + 3*(dimensions.get_x()/4), y_text_coord );
     mp_player_two_score_text->setFont( *mp_scoreboard_font );
     mp_player_two_score_text->setString( sf::String( "0" ));
-    mp_player_two_score_text->setCharacterSize( 50 );
+    mp_player_two_score_text->setCharacterSize( text_size );
     
     mp_countdown_text = std::make_unique<sf::Text>();
-    mp_countdown_text->setPosition( position.get_x() + dimensions.get_x()/2, y_text_coord + 100 );
+    mp_countdown_text->setPosition( position.get_x() + dimensions.get_x()/2 - 25, y_text_coord + 25 );
     mp_countdown_text->setFont( *mp_scoreboard_font );
 }
 
