@@ -32,11 +32,23 @@
     <Filter Include="Code\Core">
       <UniqueIdentifier>{c9ac048b-a377-4932-8a7e-e2e49918a1be}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Code\Pong">
-      <UniqueIdentifier>{7a12d1cc-e801-4d5f-bfbc-bbd8f53583c3}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Code\Types">
       <UniqueIdentifier>{d3e0acf4-719d-4180-826b-3e783a0f5bfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pong">
+      <UniqueIdentifier>{466d1523-078f-45a0-b71a-1e5f84903238}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{d970ff30-77c6-4a6c-a6f6-b822aaecb075}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Font">
+      <UniqueIdentifier>{b8f19dfc-379f-4091-a9a7-72d4c2f2bad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Font\Caviar-Dreams">
+      <UniqueIdentifier>{318cfc59-b052-456a-8bf8-742e8e6bc4b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Font\open-sans">
+      <UniqueIdentifier>{0eacc828-ddaa-4fdc-938b-4dae7520b28d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -67,18 +79,6 @@
     <ClInclude Include="..\..\Code\Math\Vector3.h">
       <Filter>Code\Math</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Code\Pong\Ball.h">
-      <Filter>Code\Pong</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Code\Pong\Paddle.h">
-      <Filter>Code\Pong</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Code\Pong\Pong.h">
-      <Filter>Code\Pong</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Code\Pong\Scoreboard.h">
-      <Filter>Code\Pong</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Code\Types\Entity.h">
       <Filter>Code\Types</Filter>
     </ClInclude>
@@ -87,6 +87,21 @@
     </ClInclude>
     <ClInclude Include="..\..\Code\Types\Identifier.h">
       <Filter>Code\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Pong\Ball.h">
+      <Filter>Pong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Pong\Paddle.h">
+      <Filter>Pong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Pong\Pong.h">
+      <Filter>Pong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Pong\Scoreboard.h">
+      <Filter>Pong</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Resources\Colours.h">
+      <Filter>Resources</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -111,18 +126,6 @@
     <ClCompile Include="..\..\Code\Math\Vector3.cpp">
       <Filter>Code\Math</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Code\Pong\Ball.cpp">
-      <Filter>Code\Pong</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Code\Pong\Paddle.cpp">
-      <Filter>Code\Pong</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Code\Pong\Pong.cpp">
-      <Filter>Code\Pong</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Code\Pong\Scoreboard.cpp">
-      <Filter>Code\Pong</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Code\Types\Entity.cpp">
       <Filter>Code\Types</Filter>
     </ClCompile>
@@ -132,5 +135,69 @@
     <ClCompile Include="..\..\Code\main.cpp">
       <Filter>Code</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Pong\Ball.cpp">
+      <Filter>Pong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Pong\Paddle.cpp">
+      <Filter>Pong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Pong\Pong.cpp">
+      <Filter>Pong</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Pong\Scoreboard.cpp">
+      <Filter>Pong</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-ExtraBold.ttf">
+      <Filter>Resources\Font\open-sans</Filter>
+    </Font>
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-ExtraBoldItalic.ttf">
+      <Filter>Resources\Font\open-sans</Filter>
+    </Font>
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-Italic.ttf">
+      <Filter>Resources\Font\open-sans</Filter>
+    </Font>
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-Light.ttf">
+      <Filter>Resources\Font\open-sans</Filter>
+    </Font>
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-LightItalic.ttf">
+      <Filter>Resources\Font\open-sans</Filter>
+    </Font>
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-Regular.ttf">
+      <Filter>Resources\Font\open-sans</Filter>
+    </Font>
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-Semibold.ttf">
+      <Filter>Resources\Font\open-sans</Filter>
+    </Font>
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-SemiboldItalic.ttf">
+      <Filter>Resources\Font\open-sans</Filter>
+    </Font>
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-Bold.ttf">
+      <Filter>Resources\Font\open-sans</Filter>
+    </Font>
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-BoldItalic.ttf">
+      <Filter>Resources\Font\open-sans</Filter>
+    </Font>
+    <Font Include="..\..\Resources\Font\Caviar-Dreams\CaviarDreams.ttf">
+      <Filter>Resources\Font\Caviar-Dreams</Filter>
+    </Font>
+    <Font Include="..\..\Resources\Font\Caviar-Dreams\CaviarDreams_BoldItalic.ttf">
+      <Filter>Resources\Font\Caviar-Dreams</Filter>
+    </Font>
+    <Font Include="..\..\Resources\Font\Caviar-Dreams\CaviarDreams_Italic.ttf">
+      <Filter>Resources\Font\Caviar-Dreams</Filter>
+    </Font>
+    <Font Include="..\..\Resources\Font\Caviar-Dreams\Caviar_Dreams_Bold.ttf">
+      <Filter>Resources\Font\Caviar-Dreams</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\Resources\Font\open-sans\Apache License.txt">
+      <Filter>Resources\Font\open-sans</Filter>
+    </Text>
+    <Text Include="..\..\Resources\Font\Caviar-Dreams\Nymphont License.txt">
+      <Filter>Resources\Font\Caviar-Dreams</Filter>
+    </Text>
   </ItemGroup>
 </Project>

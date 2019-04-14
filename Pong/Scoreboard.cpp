@@ -26,18 +26,19 @@ Scoreboard::Scoreboard( const EMILY::Point position, const EMILY::Point dimensio
     mp_timer = std::make_unique<sf::Clock>();
     
     mp_scoreboard_font = std::make_unique<sf::Font>();
+
 #ifdef _WIN32
-    if ( !mp_scoreboard_font->loadFromFile( "C:/Programming/Engines/Emily/emily-engine/Resources/Font/Caviar-Dreams/CaviarDreams.ttf" ) )
-    {
-        ASSERT_FAILED( "Failed to load font" );
-    }
+	if ( !mp_scoreboard_font->loadFromFile( "C:/Programming/Engines/Emily/emily-engine/Resources/Font/Caviar-Dreams/CaviarDreams.ttf" ) )
+	{
+		ASSERT_FAILED( "Failed to load font" );
+	}
 #else
-    if ( !mp_scoreboard_font->loadFromFile( "/Users/Archie/Documents/Programming/C++/Engines/Emily/Resources/Font/Caviar-Dreams/CaviarDreams.ttf" ) )
-    {
-        ASSERT_FAILED( "Failed to load font" );
-    }
+	if ( !mp_scoreboard_font->loadFromFile( "/Users/Archie/Documents/Programming/C++/Engines/Emily/Resources/Font/Caviar-Dreams/CaviarDreams.ttf" ) )
+	{
+		ASSERT_FAILED( "Failed to load font" );
+	}
 #endif // _WIN32
-    
+
     const int text_size = 75;
     const float y_text_coord = dimensions.get_y() + 25;
     mp_player_one_score_text = std::make_unique<sf::Text>();

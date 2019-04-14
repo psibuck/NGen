@@ -113,13 +113,14 @@
     <ClInclude Include="..\..\Code\Math\MathTests.h" />
     <ClInclude Include="..\..\Code\Math\Point.h" />
     <ClInclude Include="..\..\Code\Math\Vector3.h" />
-    <ClInclude Include="..\..\Code\Pong\Ball.h" />
-    <ClInclude Include="..\..\Code\Pong\Paddle.h" />
-    <ClInclude Include="..\..\Code\Pong\Pong.h" />
-    <ClInclude Include="..\..\Code\Pong\Scoreboard.h" />
     <ClInclude Include="..\..\Code\Types\Entity.h" />
     <ClInclude Include="..\..\Code\Types\IdentifiableObject.h" />
     <ClInclude Include="..\..\Code\Types\Identifier.h" />
+    <ClInclude Include="..\..\Pong\Ball.h" />
+    <ClInclude Include="..\..\Pong\Paddle.h" />
+    <ClInclude Include="..\..\Pong\Pong.h" />
+    <ClInclude Include="..\..\Pong\Scoreboard.h" />
+    <ClInclude Include="..\..\Resources\Colours.h" />
     <ClInclude Include="emily\ResourcePath.hpp" />
   </ItemGroup>
   <ItemGroup>
@@ -131,12 +132,32 @@
     <ClCompile Include="..\..\Code\Math\MathTests.cpp" />
     <ClCompile Include="..\..\Code\Math\Point.cpp" />
     <ClCompile Include="..\..\Code\Math\Vector3.cpp" />
-    <ClCompile Include="..\..\Code\Pong\Ball.cpp" />
-    <ClCompile Include="..\..\Code\Pong\Paddle.cpp" />
-    <ClCompile Include="..\..\Code\Pong\Pong.cpp" />
-    <ClCompile Include="..\..\Code\Pong\Scoreboard.cpp" />
     <ClCompile Include="..\..\Code\Types\Entity.cpp" />
     <ClCompile Include="..\..\Code\Types\IdentifiableObject.cpp" />
+    <ClCompile Include="..\..\Pong\Ball.cpp" />
+    <ClCompile Include="..\..\Pong\Paddle.cpp" />
+    <ClCompile Include="..\..\Pong\Pong.cpp" />
+    <ClCompile Include="..\..\Pong\Scoreboard.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\..\Resources\Font\Caviar-Dreams\CaviarDreams.ttf" />
+    <Font Include="..\..\Resources\Font\Caviar-Dreams\CaviarDreams_BoldItalic.ttf" />
+    <Font Include="..\..\Resources\Font\Caviar-Dreams\CaviarDreams_Italic.ttf" />
+    <Font Include="..\..\Resources\Font\Caviar-Dreams\Caviar_Dreams_Bold.ttf" />
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-Bold.ttf" />
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-BoldItalic.ttf" />
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-ExtraBold.ttf" />
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-ExtraBoldItalic.ttf" />
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-Italic.ttf" />
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-Light.ttf" />
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-LightItalic.ttf" />
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-Regular.ttf" />
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-Semibold.ttf" />
+    <Font Include="..\..\Resources\Font\open-sans\OpenSans-SemiboldItalic.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\Resources\Font\Caviar-Dreams\Nymphont License.txt" />
+    <Text Include="..\..\Resources\Font\open-sans\Apache License.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
