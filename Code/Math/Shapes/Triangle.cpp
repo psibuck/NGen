@@ -6,4 +6,4 @@
 //  Copyright © 2019 Archie Buck. All rights reserved.
 //
 
-#include "Triangle.hpp"
+#include "Triangle.h"

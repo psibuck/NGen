@@ -18,6 +18,7 @@ namespace EMILY
         const sf::Color WHITE = sf::Color( 255, 255, 255 );
         const sf::Color BLACK = sf::Color( 0, 0, 0 );
         const sf::Color GREY = sf::Color( 100, 100, 100 );
+        const sf::Color LIME_GREEN = sf::Color( 125, 255, 125 );
     }
 }
 

@@ -1,6 +1,7 @@
 
 #include "Code/Core/Application.h"
 #include "Pong/Pong.h"
+#include "Tennis/Tennis.h"
 
 //int main(int, char const**)
 //{
@@ -22,7 +23,9 @@
 
 int main( int, char const** )
 {
-    Pong* game = new Pong();
+    //Pong* game = new Pong();
+    Tennis* game = new Tennis();
+    
     game->initialise();
     
     while( game->run() )
@@ -34,6 +37,8 @@ int main( int, char const** )
     }
     
     game->shutdown();
+    
+    delete game;
     
     return EXIT_SUCCESS;
 }

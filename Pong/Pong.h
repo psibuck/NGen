@@ -33,7 +33,7 @@ class Pong : public EMILY::Application
     typedef EMILY::Application super;
     
 public:
-    Pong( void );
+    Pong();
     void initialise( void ) override;
     void display( void ) override;
     void update( void ) override;
@@ -41,10 +41,10 @@ public:
     virtual void handle_event( sf::Event event ) final;
     
 private:
-    void check_for_collision( void );
+    void check_for_collision();
     void handle_keypress( const sf::Keyboard::Key key  );
     void handle_key_release( const sf::Keyboard::Key key );
-    void score( void );
+    void score();
     
     GAME_STATE current_state{ GAME_STATE::MAIN_MENU };
     bool one_player{ true };

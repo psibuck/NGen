@@ -24,14 +24,14 @@ public:
    explicit Paddle( const EMILY::Point position_in, const EMILY::Point y_bounds_in );
     
     void draw( sf::RenderWindow* window ) const;
-    void update( void );
+    void update();
     void handle_keypress( const sf::Keyboard::Key key );
     void handle_key_release( const sf::Keyboard::Key key );
-    sf::RectangleShape* get_paddle( void );
+    sf::RectangleShape* get_paddle();
     
 private:
-    void move_up( void );
-    void move_down( void );
+    void move_up();
+    void move_down();
     
     std::unique_ptr<sf::RectangleShape> paddle{ nullptr };
 	EMILY::Point y_bounds{ 0.0f, 0.0f };
