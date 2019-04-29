@@ -23,10 +23,10 @@ enum class AXIS : short int
     Y
 };
 
-class Ball : public EMILY::Entity
+class PongBall : public EMILY::Entity
 {
 public:
-    Ball( const EMILY::Point start_position );
+    PongBall( const EMILY::Point start_position );
     
     void draw( sf::RenderWindow* window ) const;
     void update( void );

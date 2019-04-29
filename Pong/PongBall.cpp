@@ -6,7 +6,7 @@
 //  Copyright © 2019 Archie Buck. All rights reserved.
 //
 
-#include "Pong/Ball.h"
+#include "Pong/PongBall.h"
 
 #include "Code/Math/Point.h"
 #include "Resources/Colours.h"
@@ -15,7 +15,7 @@
 //--
 // Constructor
 //--
-Ball::Ball( const EMILY::Point start_position )
+PongBall::PongBall( const EMILY::Point start_position )
 : EMILY::Entity( 'ball' ), m_start_position( start_position )
 {
     m_ball = std::make_unique<sf::CircleShape>( m_diameter );
@@ -28,7 +28,7 @@ Ball::Ball( const EMILY::Point start_position )
 //--
 // Update function
 //--
-void Ball::update( void )
+void PongBall::update( void )
 {
     m_ball->setPosition( m_ball->getPosition().x + m_speed.get_x(), m_ball->getPosition().y + m_speed.get_y() );
 }
@@ -36,7 +36,7 @@ void Ball::update( void )
 //--
 // Method to draw the ball to the window
 //--
-void Ball::draw( sf::RenderWindow* window ) const
+void PongBall::draw( sf::RenderWindow* window ) const
 {
     window->draw( *m_ball );
 }
@@ -44,7 +44,7 @@ void Ball::draw( sf::RenderWindow* window ) const
 //--
 // Changes the direction of the ball on contact
 //--
-void Ball::bounce( const AXIS axis )
+void PongBall::bounce( const AXIS axis )
 {
     if( axis == AXIS::X )
     {
@@ -59,7 +59,7 @@ void Ball::bounce( const AXIS axis )
 //--
 // Returns the radius of the ball
 //--
-float Ball::get_radius( void ) const
+float PongBall::get_radius( void ) const
 {
     return m_diameter/2;
 }
@@ -67,7 +67,7 @@ float Ball::get_radius( void ) const
 //--
 // Provides a public interface to get the ball position
 //--
-EMILY::Point Ball::get_position( void )
+EMILY::Point PongBall::get_position( void )
 {
     const EMILY::Point pos_vec = EMILY::Point( m_ball->getPosition().x, m_ball->getPosition().y );
     return pos_vec;
@@ -76,7 +76,7 @@ EMILY::Point Ball::get_position( void )
 //--
 // Speeds up the ball
 //--
-void Ball::speed_up( void )
+void PongBall::speed_up( void )
 {
     if( m_speed.get_x() > 0 )
     {
@@ -93,7 +93,7 @@ void Ball::speed_up( void )
 //--
 // Called when we want the ball to return to the middle and at the default speed - e.g after a point scored
 //--
-void Ball::reset()
+void PongBall::reset()
 {
     m_ball->setPosition( m_start_position.get_x(), m_start_position.get_y() );
     m_speed = EMILY::Point( m_start_speed, m_start_speed );

@@ -10,7 +10,7 @@
 #define Pong_h
 
 #include "Code/Core/Application.h"
-#include "Pong/Ball.h"
+#include "Pong/PongBall.h"
 #include "Pong/Paddle.h"
 #include "Pong/Scoreboard.h"
 #include <SFML/Graphics.hpp>
@@ -48,7 +48,7 @@ private:
     
     GAME_STATE current_state{ GAME_STATE::MAIN_MENU };
     bool one_player{ true };
-    std::unique_ptr<Ball> m_ball{ nullptr };
+    std::unique_ptr<PongBall> m_ball{ nullptr };
     std::unique_ptr<Paddle> m_paddle_one{ nullptr };
     std::unique_ptr<Paddle> m_paddle_two{ nullptr };
     std::unique_ptr<Scoreboard> m_scoreboard{ nullptr };

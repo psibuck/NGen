@@ -12,6 +12,7 @@
 #include "Code/Core/Application.h"
 #include "Tennis/Court.h"
 #include "Tennis/TennisBall.h"
+#include <array>
 
 class Tennis : public EMILY::Application
 {
@@ -25,7 +26,8 @@ public:
     
 private:
     std::unique_ptr<Court> m_court;
-    std::unique_ptr<TennisBall> m_ball;
+    
+    std::array<std::unique_ptr<TennisBall>, 100> m_balls;
 };
 
 #endif /* Tennis_hpp */

@@ -39,7 +39,7 @@
 		21747E54222FCAC700118D6F /* Pong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747E3D222FCAC700118D6F /* Pong.cpp */; };
 		21747E55222FCAC700118D6F /* Scoreboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747E3E222FCAC700118D6F /* Scoreboard.cpp */; };
 		21747E56222FCAC700118D6F /* Paddle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747E3F222FCAC700118D6F /* Paddle.cpp */; };
-		21747E57222FCAC700118D6F /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747E43222FCAC700118D6F /* Ball.cpp */; };
+		21747E57222FCAC700118D6F /* PongBall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21747E43222FCAC700118D6F /* PongBall.cpp */; };
 		21AFB9882240EACB003D5690 /* Triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21AFB9872240EACB003D5690 /* Triangle.cpp */; };
 		21AFB98C226326BA003D5690 /* Tennis.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21AFB98B226326BA003D5690 /* Tennis.cpp */; };
 		21AFB98F22632746003D5690 /* Court.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 21AFB98E22632746003D5690 /* Court.cpp */; };
@@ -105,14 +105,14 @@
 		21747E38222FCAC700118D6F /* CaviarDreams.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams.ttf; sourceTree = "<group>"; };
 		21747E39222FCAC700118D6F /* CaviarDreams_Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CaviarDreams_Italic.ttf; sourceTree = "<group>"; };
 		21747E3A222FCAC700118D6F /* Nymphont License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Nymphont License.txt"; sourceTree = "<group>"; };
-		21747E3C222FCAC700118D6F /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
+		21747E3C222FCAC700118D6F /* PongBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PongBall.h; sourceTree = "<group>"; };
 		21747E3D222FCAC700118D6F /* Pong.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Pong.cpp; sourceTree = "<group>"; };
 		21747E3E222FCAC700118D6F /* Scoreboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Scoreboard.cpp; sourceTree = "<group>"; };
 		21747E3F222FCAC700118D6F /* Paddle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Paddle.cpp; sourceTree = "<group>"; };
 		21747E40222FCAC700118D6F /* Pong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pong.h; sourceTree = "<group>"; };
 		21747E41222FCAC700118D6F /* Scoreboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scoreboard.h; sourceTree = "<group>"; };
 		21747E42222FCAC700118D6F /* Paddle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Paddle.h; sourceTree = "<group>"; };
-		21747E43222FCAC700118D6F /* Ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ball.cpp; sourceTree = "<group>"; };
+		21747E43222FCAC700118D6F /* PongBall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PongBall.cpp; sourceTree = "<group>"; };
 		21747E58222FCB0400118D6F /* Colours.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Colours.h; sourceTree = "<group>"; };
 		21747E5922312BE900118D6F /* Converters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Converters.h; sourceTree = "<group>"; };
 		21AFB9862240EACB003D5690 /* Triangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
@@ -281,8 +281,8 @@
 			children = (
 				21747E3D222FCAC700118D6F /* Pong.cpp */,
 				21747E40222FCAC700118D6F /* Pong.h */,
-				21747E43222FCAC700118D6F /* Ball.cpp */,
-				21747E3C222FCAC700118D6F /* Ball.h */,
+				21747E43222FCAC700118D6F /* PongBall.cpp */,
+				21747E3C222FCAC700118D6F /* PongBall.h */,
 				21747E3E222FCAC700118D6F /* Scoreboard.cpp */,
 				21747E41222FCAC700118D6F /* Scoreboard.h */,
 				21747E3F222FCAC700118D6F /* Paddle.cpp */,
@@ -426,7 +426,7 @@
 				21AFB98F22632746003D5690 /* Court.cpp in Sources */,
 				21747D5B221EB42500118D6F /* Vector3.cpp in Sources */,
 				21747D712225D6C600118D6F /* Buffer.cpp in Sources */,
-				21747E57222FCAC700118D6F /* Ball.cpp in Sources */,
+				21747E57222FCAC700118D6F /* PongBall.cpp in Sources */,
 				21747E56222FCAC700118D6F /* Paddle.cpp in Sources */,
 				21AFB9922263274F003D5690 /* Player.cpp in Sources */,
 				21AFB9882240EACB003D5690 /* Triangle.cpp in Sources */,
@@ -455,7 +455,7 @@
 					i386,
 					x86_64,
 				);
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks/,
@@ -502,7 +502,7 @@
 					i386,
 					x86_64,
 				);
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				FRAMEWORK_SEARCH_PATHS = (
 					/Library/Frameworks/,
@@ -547,7 +547,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_X86_VECTOR_INSTRUCTIONS = avx2;
 				CODE_SIGN_STYLE = Automatic;
 				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = DEBUG;
@@ -567,7 +567,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
 				CLANG_X86_VECTOR_INSTRUCTIONS = avx2;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Emily-Info.plist";
