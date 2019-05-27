@@ -35,9 +35,6 @@
     <Filter Include="Code\Types">
       <UniqueIdentifier>{d3e0acf4-719d-4180-826b-3e783a0f5bfb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Pong">
-      <UniqueIdentifier>{466d1523-078f-45a0-b71a-1e5f84903238}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Resources">
       <UniqueIdentifier>{d970ff30-77c6-4a6c-a6f6-b822aaecb075}</UniqueIdentifier>
     </Filter>
@@ -88,18 +85,6 @@
     <ClInclude Include="..\..\Code\Types\Identifier.h">
       <Filter>Code\Types</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Pong\Ball.h">
-      <Filter>Pong</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Pong\Paddle.h">
-      <Filter>Pong</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Pong\Pong.h">
-      <Filter>Pong</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\Pong\Scoreboard.h">
-      <Filter>Pong</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Resources\Colours.h">
       <Filter>Resources</Filter>
     </ClInclude>
@@ -132,21 +117,7 @@
     <ClCompile Include="..\..\Code\Types\IdentifiableObject.cpp">
       <Filter>Code\Types</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Code\main.cpp">
-      <Filter>Code</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Pong\Ball.cpp">
-      <Filter>Pong</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Pong\Paddle.cpp">
-      <Filter>Pong</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Pong\Pong.cpp">
-      <Filter>Pong</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\Pong\Scoreboard.cpp">
-      <Filter>Pong</Filter>
-    </ClCompile>
+    <ClCompile Include="..\..\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="..\..\Resources\Font\open-sans\OpenSans-ExtraBold.ttf">

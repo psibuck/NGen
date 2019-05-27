@@ -6,11 +6,9 @@
 //  Copyright © 2019 Archie Buck. All rights reserved.
 //
 
-#ifndef IdentifiableObject_h
-#define IdentifiableObject_h
+#pragma once
 
 #include "Code/Types/Identifier.h"
-#include <stdio.h>
 
 namespace EMILY
 {
@@ -25,5 +23,3 @@ namespace EMILY
         Identifier id{ NULL_ID };
     };
 }
-
-#endif /* IdentifiableObject_h */

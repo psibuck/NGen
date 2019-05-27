@@ -76,7 +76,7 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)/../../../emily-engine;$(SolutionDir)/../../External Libraries/Windows/SFML/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)/../..;$(SolutionDir)/../../../emily-engine;$(SolutionDir)/../../External Libraries/Windows/SFML/Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <TargetMachine>MachineX86</TargetMachine>
@@ -116,10 +116,6 @@
     <ClInclude Include="..\..\Code\Types\Entity.h" />
     <ClInclude Include="..\..\Code\Types\IdentifiableObject.h" />
     <ClInclude Include="..\..\Code\Types\Identifier.h" />
-    <ClInclude Include="..\..\Pong\Ball.h" />
-    <ClInclude Include="..\..\Pong\Paddle.h" />
-    <ClInclude Include="..\..\Pong\Pong.h" />
-    <ClInclude Include="..\..\Pong\Scoreboard.h" />
     <ClInclude Include="..\..\Resources\Colours.h" />
     <ClInclude Include="emily\ResourcePath.hpp" />
   </ItemGroup>
@@ -128,16 +124,12 @@
     <ClCompile Include="..\..\Code\Core\Event.cpp" />
     <ClCompile Include="..\..\Code\Core\EventObserver.cpp" />
     <ClCompile Include="..\..\Code\Core\EventSubject.cpp" />
-    <ClCompile Include="..\..\Code\main.cpp" />
     <ClCompile Include="..\..\Code\Math\MathTests.cpp" />
     <ClCompile Include="..\..\Code\Math\Point.cpp" />
     <ClCompile Include="..\..\Code\Math\Vector3.cpp" />
     <ClCompile Include="..\..\Code\Types\Entity.cpp" />
     <ClCompile Include="..\..\Code\Types\IdentifiableObject.cpp" />
-    <ClCompile Include="..\..\Pong\Ball.cpp" />
-    <ClCompile Include="..\..\Pong\Paddle.cpp" />
-    <ClCompile Include="..\..\Pong\Pong.cpp" />
-    <ClCompile Include="..\..\Pong\Scoreboard.cpp" />
+    <ClCompile Include="..\..\main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Font Include="..\..\Resources\Font\Caviar-Dreams\CaviarDreams.ttf" />

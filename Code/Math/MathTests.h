@@ -6,10 +6,7 @@
 //  Copyright © 2019 Archie Buck. All rights reserved.
 //
 
-#ifndef MathTests_hpp
-#define MathTests_hpp
-
-#include <stdio.h>
+#pragma once
 
 namespace EMILY
 {
@@ -23,4 +20,3 @@ namespace EMILY
         static void test_vector_operations( void );
     };
 }
-#endif /* MathTests_hpp */
